@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>MODx</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.files/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylefont.css" /> 
+    <style type="text/css">
+<!--
+.STYLERED {
+	font-size: small;
+	color: #FF0000;
+	font-family: "";
+}
+-->
+</style>
+</head>
+<body  >   				
+
+<!-- server -->
+<TABLE width="100%" CELLPADDING=0 CELLSPACING=0 BGCOLOR="#015B91">
+    <TR>
+      <TD width="78"><IMG SRC="images/vicidial_admin_web_logo_small.gif"></TD>
+      <TD width="75">&nbsp; <A HREF="admin.php" ALT="Users"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Users</B></A> &nbsp; </TD>
+      <TD width="104">&nbsp; <A HREF="admin.php?ADD=10" ALT="Campaigns"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Campaigns</B></A> &nbsp; </TD>
+      <TD width="63">&nbsp; <A HREF="admin.php?ADD=100" ALT="Lists"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Lists</B></A> &nbsp; </TD>
+      <TD width="76">&nbsp; <A HREF="admin.php?ADD=1000000" ALT="Scripts"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Scripts</B></A> &nbsp; </TD>
+      <TD width="73">&nbsp; <A HREF="admin.php?ADD=10000000" ALT="Filters"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Filters</B></A> &nbsp; </TD>
+      <TD width="98">&nbsp; <A HREF="admin.php?ADD=1000" ALT="In-Groups"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>In-Groups</B></A> &nbsp; </TD>
+      <TD width="115">&nbsp; <A HREF="admin.php?ADD=100000" ALT="User Groups"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>User Groups</B></A> &nbsp; </TD>
+      <TD width="103">&nbsp; <A HREF="admin.php?ADD=10000" ALT="Remote Agents"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Remote ents</B></A></TD>
+      <TD width="73">&nbsp; <A HREF="admin.php?ADD=10000000000" ALT="Admin"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Admin</B></A> &nbsp; </TD>
+      <TD width="90">&nbsp; <A HREF="admin.php?ADD=999999" ALT="Reports"><FONT FACE="ARIAL,HELVETICA" COLOR=WHITE SIZE=2><B>Reports</B></A> &nbsp; </TD>
+    </TR>
+</TABLE>
+<!-- recent documents -->
+
+<div class="sectionHeader"><b  class="small cellLabel3">Query Condition</b> </div><div class="sectionBody" id="lyr1">
+<form action='' name="newGroupForm" method='POST'>
+<input type="hidden" name="searchornot"  value="1">
+<input type="hidden" name="searchProject"  value="5">
+<table border=0 cellpadding=2 cellspacing=0>
+<!-- include select list start-->
+
+ <tr  bgcolor='#eeeeee'>
+                            <td  valign=top class="small"  class="small cellLabel3">
+				  <b>Phones: </b></td>
+                                 <td valign=top class="small"  class="small cellLabel3">
+                                   
+		            </td>
+                           <td><b>In-Groups: </b></td>
+<td valign=top align="right" class="small"  class="small cellLabel3">
+<?
+if($errmsg=="")
+{
+?>
+<input type="button" class="crmButton create small" name="add" value="Search" onclick="document.newGroupForm.log_submit.click();">
+<input type="button" class="crmButton cancel small" name="cancel" value="Cancle" onClick="change2();">
+<?
+}
+else
+{
+  echo $errmsg;
+}
+?>
+
+<!--			<td id="Button1" class="small cellLabel3"><a href="#" onclick="document.newGroupForm.log_submit.click();"><img src="images/icons/save.gif" align="absmiddle"> Search</a></td>
+			<td id="Button2" class="small cellLabel3"><a href="list44qa.php"><img src="images/icons/cancel.gif" align="absmiddle"> Cancel</span></a></td>
+-->
+
+      <input type='submit' name='log_submit' value='Search logs' style="display:none">
+</td>
+
+
+
+                          </tr>
+
+                          <tr >
+                                <td  colspan=1  width="18%"><table >
+                                         <tr>                          
+                                          <td   class="small cellLabel3">Phones of Entity<br>
+				                 <select id="availList" name="availList" size=6 multiple style="border:1px solid #cccccc;width:150px;">
+				                   <option value="2301">2301</option>
+				                   <option value="2302">2302</option>
+				                   <option value="2303">2303</option>
+				                   <option value="2304">2304</option>
+				                   <option value="2304">2305</option>
+				                   <option value="2306">2306</option>
+				                   <option value="2307">2307</option>
+ 				                 </select>
+				                 <input type="hidden" name="selectedColumnsString" value=",<?=$searchText?>,"/>		
+			                      </td>
+                                          <td  width="20">
+			                           &nbsp;<input type="button" name="Button" value="&nbsp;&rsaquo;&rsaquo;&nbsp;" onClick="addColumn()" class="crmButton small"/><br /><br />
+			         	             &nbsp;<input type="button" name="Button1" value="&nbsp;&lsaquo;&lsaquo;&nbsp;" onClick="delColumn()" class="crmButton small"/>
+                                          </td>
+                                          <td  class="small cellLabel3">Phones of Selected<br>
+                                            <select id="selectedColumns" name="selectedColumns"  size=6 multiple style="border:1px solid #cccccc;width:150px;">
+                                              <option value="2301">2301</option>
+                                              <option value="2302">2302</option>
+                                            </select>
+                                                 </td>
+                                  </tr>
+                                      </table></td> 
+                                <td  colspan=1>
+                                        
+                                 </td>    
+                                <td>&nbsp;</td>                      
+      </tr>
+
+
+
+                   
+
+<!-- include selectlist end -->
+  <tr bgcolor='#eeeeee'>
+    <td class="small cellLabel3" align="left" width="25%"><b>User Group:</b></td>
+<td class="small cellLabel3" align="left" width="25%">
+      <select name="lastapp" size="1" class="importBox small"   id="lastapp"  onchange="">
+     <option value="">[All]</option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+  </select> 		
+   
+    </td> 
+    <td class="small cellLabel3" align="left" width="25%"><b>User:</b></td>
+     <td class="small cellLabel3"  align="left" width="25%">
+     
+   <select name="lastapp" size="1" class="importBox small"   id="lastapp"  onchange="">
+     <option value="">[All]</option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+     <option value=""></option>
+  </select>
+            </td>
+</tr>
+<tr bgcolor='#ffffff'>
+    <td class="small cellLabel3" align="left" width="25%"><b>Channel Group:</b></td>
+<td class="small cellLabel3" align="left" width="25%">
+      <select name="lastapp" size="1" class="importBox small"   id="lastapp"  onchange="">
+     <option value="">[All]</option>
+     <option value="">DID_INBOUND</option>
+     <option value="">Outbound Local</option>
+     <option value="">Local Channel Line</option>
+  </select> 		
+   
+    </td> 
+    <td class="small cellLabel3" align="left" width="25%"><b>Term Reason:</b></td>
+     <td class="small cellLabel3"  align="left" width="25%">
+     
+   <select name="lastapp" size="1" class="importBox small"   id="lastapp"  onchange="">
+     <option value="">[All]</option>
+     <option value="">AGENT</option>
+     <option value="">CALLER</option>
+     <option value="">ABANDON</option>
+     <option value="">QUEUETIMEOUT</option>
+     <option value="">NOAGENT</option>
+  </select>
+        </td>
+</tr>
+<tr bgcolor='#ffffff'>
+    <td class="small cellLabel3" align="left" width="25%"><b>Status:</b></td>
+<td class="small cellLabel3" align="left" width="25%"><select name="lastapp2" size="1" class="importBox small"   id="lastapp2"  onchange="">
+  <option value="">[All]</option>
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+  <option value=""></option>
+</select></td> 
+    <td class="small cellLabel3" align="left" width="25%">&nbsp;</td>
+     <td class="small cellLabel3"  align="left" width="25%">&nbsp;</td>
+</tr>
+
+ <script language="JavaScript" src="/billmcd/user/manager/media/script/datefunctions.js"></script>
+ 
+<tr bgcolor='#eeeeee'>
+    <td class="small cellLabel3" align="left" width="25%"><b>Call Time From:</b></td>
+    <td class="small cellLabel3" align="left" width="25%"> 
+<input type=hidden name='searchText2' class="inputbox" style="width:100px" value="">
+          <span id="datefrom_show" style="font-weight: bold;"></span>
+		  <a href="javascript:cal1.popup();" onMouseover="window.status='Select a date'; return true;" onMouseout="window.status=''; return true;"><img src="images/icons/cal.gif" width="16" height="16" border="0" align="absimddle"></a>
+			  <!--<a onClick="document.logging.datefrom.value=''; document.getElementById('datefrom_show').innerHTML='(not set)'; return true;" onMouseover="window.status='Don\'t set a date'; return true;" onMouseout="window.status=''; return true;" style="cursor:pointer; cursor:hand"><img src="images/icons/cal_nodate.gif" width="16" height="16" border="0" alt="No date"></a>-->
+&nbsp;&nbsp;
+<input type="text" name="searchstarthour" id ="searchstarthour" maxlength=2 value="" style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #000000;border:0px solid #bababa;padding-left:0px;	width:20px;background-color:#ffffff;">
+:
+<input type="text" name="searchstartminute" id ="searchstartminute" maxlength=2 value="" style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #000000;border:0px solid #bababa;padding-left:0px;	width:20px;background-color:#ffffff;">
+:<input type="text" name="searchstartminute" id ="searchstartminute" maxlength=2 value="" style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #000000;border:0px solid #bababa;padding-left:0px;	width:20px;background-color:#ffffff;">
+ </td>
+<td class="small cellLabel3" align="left" width="25%"><b>Call Time To:</b></td>
+    <td class="small cellLabel3" align="left" width="25%">
+		  <input type=hidden name='searchText2' class="inputbox" style="width:100px" value="">
+          <span id="datefrom_show" style="font-weight: bold;"></span>
+		  <a href="javascript:cal1.popup();" onMouseover="window.status='Select a date'; return true;" onMouseout="window.status=''; return true;"><img src="images/icons/cal.gif" width="16" height="16" border="0" align="absimddle"></a>
+			  <!--<a onClick="document.logging.datefrom.value=''; document.getElementById('datefrom_show').innerHTML='(not set)'; return true;" onMouseover="window.status='Don\'t set a date'; return true;" onMouseout="window.status=''; return true;" style="cursor:pointer; cursor:hand"><img src="images/icons/cal_nodate.gif" width="16" height="16" border="0" alt="No date"></a>-->
+&nbsp;&nbsp;
+<input type="text" name="searchstarthour" id ="searchstarthour" maxlength=2 value="" style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #000000;border:0px solid #bababa;padding-left:0px;	width:20px;background-color:#ffffff;">
+:
+<input type="text" name="searchstartminute" id ="searchstartminute" maxlength=2 value="" style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #000000;border:0px solid #bababa;padding-left:0px;	width:20px;background-color:#ffffff;">
+:<input type="text" name="searchstartminute" id ="searchstartminute" maxlength=2 value="" style="font-family: Arial, Helvetica, sans-serif;font-size: 11px;color: #000000;border:0px solid #bababa;padding-left:0px;	width:20px;background-color:#ffffff;">
+         </td>  
+  </tr>
+
+  <tr bgcolor='#ffffff' >
+    <td class="small cellLabel3"  align="left" width="25%"><b>Customer Phone:</b></td>
+    <td class="small cellLabel3"  align="left" width="25%"> <input type=text name='searchText1' class="inputbox" style="width:280px" value=""></td>
+   
+ <td class="small cellLabel3" align="left" width="25%">&nbsp;</td>
+   <td class="small cellLabel3" align="left" width="25%">
+      		
+    </td>
+
+  </tr>
+  <tr bgcolor='#eeeeee' >
+    <td class="small cellLabel3"  align="left" width="25%"><b>Sort By:</b></td>
+    <td class="small cellLabel3"  align="left" width="25%"> <select name="sortby" >
+	<option value="src">Call Time</option>
+				<option value="src">Call FROM</option>
+				<option value="dst">Call TO</option>
+			</select></td>
+   
+ <td class="small cellLabel3" align="left" width="25%">&nbsp;</td>
+ <td class="small cellLabel3" align="right" width="25%">
+ <input type="button" class="crmButton create small" name="add" value="Search" onclick="document.newGroupForm.log_submit.click();">
+<input type="button" class="crmButton cancel small" name="cancel" value="Cancle" onClick="change2();">
+ </td>
+
+  </tr>
+<tr>
+<td colspan=4 align="right">  
+<span class="STYLERED"><?=$dateerr?></span>
+</td>  
+</tr>
+  </tbody>
+</table>
+</form>
+</div>
+
+<!-- database -->
+<div class="sectionHeader"><b class="small cellLabel3">Query results</b></div><div class="sectionBody" id="lyr4">
+		<p class="small cellLabel3">report date from : 2010-08-27 00:00:00 to : 2010-08-27 23:59:59     Search Time:2010-08-27 12:01:40<p />
+
+
+
+		<table border="0" cellpadding="1" cellspacing="1" width="100%" bgcolor="#707070">
+		 <thead>
+		 <tr>
+			<!-- <td width="120"><b>Call ID</b></td> -->
+			<td width="88" align="center" class="small cellLabel3"><b>User Group</b></td>
+		   <td width="88" align="center" class="small cellLabel3"><b>User</b></td>
+		   <td width="88" align="center" class="small cellLabel3"><b>Phone</b></td>
+		   <td width="88" align="center" class="small cellLabel3"><b>In-Group</b></td>
+			<td width="112" align="center" class="small cellLabel3"><b>Channel Group</b></td>
+		   <td width="103" align="center" class="small cellLabel3"><b>Call Time</b></td>
+		   <td width="99" align="center" class="small cellLabel3"><b>Dial</b></td>
+		   <td width="105" align="center" class="small cellLabel3"><b>To</b></td>
+		   <td width="111" align="center" class="small cellLabel3"><b>Term Reason</b></td>
+		   <td width="88" align="center" class="small cellLabel3"><b>Status</b></td>
+			<td width="88" align="center" class="small cellLabel3"><b>Duration</b></td>
+			<td width="88" align="center" class="small cellLabel3"><b>Location</b></td>
+		  </tr>
+		  </thead>
+		  <tbody>
+          <tr  bgcolor="#ffffff" align="left"  style="cursor:default">
+		  <!-- <td><b style="color:#009933"><?=$arr_product_id[$k];?></b></td> -->
+		  <td align="left" class="small cellLabel2">Ehsn<a href="/vicidial/admin.php?ADD=311111&amp;user_group=Ehsn"></a></td>
+		  <td align="left" class="small cellLabel2">D01</td>
+		  <td align="left" class="small cellLabel2">2301</td>
+		  <td align="left" class="small cellLabel2">40088888888</td>
+		  <td align="left" class="small cellLabel2">Local Channel Line</td>
+		  <td align="left" class="small cellLabel2">2010-08-27 00:00:08</td>
+		  <td align="left" class="small cellLabel2">020-8888888</td>
+		  <td align="left" class="small cellLabel2"><span lang="EN-US" xml:lang="EN-US">58334911</span></td>
+		  <td align="left" class="small cellLabel2">AGENT</td>
+		  <td align="left" class="small cellLabel2">DROP</td>
+		  <td align="right" class="small cellLabel2">60</td>
+		  <td align="right" class="small cellLabel2">DownLoad</td>
+		 
+	 </tr>
+	      </tr>
+		  <tr bgcolor="#CCCCCC">
+			<td valign="top"  class="small cellLabel3"><b>Totals:</b></td>
+			<td colspan="6" class="small cellLabel3"><b><?=$rowcount?>&nbsp; Records</b></td>
+			<td align="right" valign="top" class="small cellLabel3"><b style='color:#990033'></td>
+			<td colspan="2" class="small cellLabel3">&nbsp;</td>
+			<td align="right" valign="top" class="small cellLabel3"><b><?=$durationtt;?></td>
+			<td align="right" valign="top" class="small cellLabel3"><b><?=$billsectt;?></td>
+		  </tr>
+		  </tbody>
+		</table>
+		<div style="text-align:right"><img src="images/page.jpg" /></div> 
+		</form>
+</div>
+<script language="javascript">
+
+var moveupLinkObj,moveupDisabledObj,movedownLinkObj,movedownDisabledObj;
+function setObjects() 
+{
+	availListObj=getObj("availList");
+	selectedColumnsObj=getObj("selectedColumns");
+}
+function addColumn() 
+{
+setObjects();
+
+for (i=0;i<selectedColumnsObj.length;i++) 
+{
+selectedColumnsObj.options[i].selected=false
+}
+
+for (i=0;i<availListObj.length;i++)  
+{
+  if (availListObj.options[i].selected==true) 
+  {
+
+    for (j=0;j<selectedColumnsObj.length;j++) 
+    {
+      if (selectedColumnsObj.options[j].value==availListObj.options[i].value) 
+      {
+        var rowFound=true
+        var existingObj=selectedColumnsObj.options[j]
+      }
+    }
+ 
+    if (rowFound!=true) 
+    {
+       var newColObj=document.createElement("OPTION")
+       newColObj.value=availListObj.options[i].value
+       newColObj.innerText=availListObj.options[i].innerText
+       selectedColumnsObj.appendChild(newColObj)
+	availListObj.options[i].selected=false
+	newColObj.selected=true
+	rowFound=false
+     }
+    else 
+    {
+       existingObj.selected=true
+    }
+   }
+
+ }
+formSelectColumnString();
+}
+
+function delColumn() 
+{
+
+for (i=selectedColumnsObj.options.length;i>=0;i--) 
+{
+if (selectedColumnsObj.options.selectedIndex>=0)
+selectedColumnsObj.remove(selectedColumnsObj.options.selectedIndex)
+}
+
+formSelectColumnString();
+
+}
+
+function formSelectColumnString()
+{
+var selectedColStr = "";
+for (i=0;i<selectedColumnsObj.options.length;i++) 
+{
+selectedColStr += selectedColumnsObj.options[i].value + ",";
+}
+document.newGroupForm.selectedColumnsString.value =selectedColStr;
+
+}
+
+
+function SetSelectColumnString() 
+{
+  selectedColStr=document.newGroupForm.selectedColumnsString.value;
+  <!--alert(selectedColStr);-->
+ for (i=0;i<availListObj.length;i++)  
+ {
+      var selecteditem= ","+availListObj.options[i].value+",";
+     var index = selectedColStr.indexOf(selecteditem);
+     if (index != -1) 
+     { 
+         var newColObj=document.createElement("OPTION");
+         newColObj.value=availListObj.options[i].value;
+         newColObj.innerText=availListObj.options[i].innerText;
+         selectedColumnsObj.appendChild(newColObj);
+	 //newColObj.selected=true;
+
+      }
+ } 
+
+formSelectColumnString();
+}
+ 
+function showOptions2()
+{
+showOptions();
+for (i=selectedColumnsObj.options.length;i>=0;i--) 
+{
+selectedColumnsObj.remove(i);
+}
+document.newGroupForm.selectedColumnsString.value="";
+}
+
+
+setObjects();
+
+showOptions();
+
+				
+
+
+SetSelectColumnString();
+
+</script>
+
+</body>
+</html>
+<!-- end footer -->
+

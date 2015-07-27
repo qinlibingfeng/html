@@ -1,0 +1,78 @@
+* {margin:0;padding:0;}
+ul {list-style:none;}
+body {
+	font:12px/1.8em 宋体;
+	background-color:#FFF;
+}
+#top, #content, #footer, #add {
+	margin:10px;
+	padding:10px;
+	border:solid 1px #c8c8c8;
+}
+#top .title {
+	font: 20px/2em 黑体;
+}
+#content li.contact-list {
+	background-color:#efefef;
+	border:solid 1px #ccc;
+	height:20px;
+	line-height:20px;
+	margin:20px 0;
+}
+#content li.title1 {
+	font-weight:bold;
+	background-color:#cbcbcb;
+}
+#content li.contact-list span{
+	display:inline-block;
+	width:120px;
+	text-align:center;
+}
+#content .paging {
+}
+#login-box {
+	margin:80px auto;
+	width:500px;
+	padding:10px;
+	border:solid 1px #c8c8c8;
+	text-align:center;
+}
+#add {
+	
+}
+.title {
+	margin:0 auto;
+	text-align:center;
+	padding:5px;
+}
+#add table {
+	border-collapse:collapse;
+	width:500px;
+	margin:0 auto;
+}
+#add td {
+	border:solid 1px #dfdfdf;
+	padding:8px;
+}
+#add table input[type="text"] {
+	width:200px;
+	height:22px;
+	border:solid 1px #bbb;
+}
+
+#editpwd {
+	width:500px;
+	margin:0 auto;
+	text-align:center;
+	line-height:35px;
+}
+#editpwd input[type="text"] {
+	width:200px;
+	height:22px;
+	border:solid 1px #bbb;
+}
+
+
+
+
+

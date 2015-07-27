@@ -1,0 +1,9 @@
+﻿ vdweb|GOOD|Thu, 10 Oct 2013 17:07:14 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Thu, 10 Oct 2013 17:07:33 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Thu, 10 Oct 2013 17:09:22 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Sat, 26 Oct 2013 15:56:40 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Mon, 28 Oct 2013 14:10:38 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Mon, 11 Nov 2013 14:08:18 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Wed, 13 Nov 2013 16:08:02 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)|吴李红|
+vdweb|GOOD|Thu, 02 Jan 2014 10:19:59 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)|吴李红|
+vdweb|GOOD|Mon, 10 Mar 2014 13:37:08 +0800|3075|3075|127.0.0.1|Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)|吴李红|

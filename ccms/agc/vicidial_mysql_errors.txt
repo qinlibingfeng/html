@@ -1,0 +1,1 @@
+2011-04-15 14:30:36|vdc_db_query|00110|1146|Table 'vtigercrm52.vtiger_users' doesn't exist|UPDATE vicidial_list set status='INCALL', user='sevenk' where lead_id='149';|sevenk|10.201.107.82|1302848978_232211486476|

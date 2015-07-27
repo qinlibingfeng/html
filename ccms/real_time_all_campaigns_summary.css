@@ -1,0 +1,45 @@
+/* Real-Time All Campaigns Summary  CSS */
+body,td,th {font-family: Verdana, Arial, Helvetica, sans-serif, "宋体";	font-size: 12px;line-height: 170%;color:#737373;}
+body {margin:0px;background:#fff;}
+#kuang{ margin:0px; width:950px; padding:0px; }
+.dlal{ background-color:#D9E6FE; line-height:32px; text-align:center; font-size:14px;border-bottom:solid 1px #fff;}
+.bordertop{ border:solid 1px #D9E6FE;}
+.font_date{ text-align:right; font-weight:bold; padding-right:8px; line-height:28px; border-bottom:solid 1px #eee;}
+.font_left{ color:#F47621; border-bottom:solid 1px #eee;}
+.view{ background-color:#eee; line-height:32px; text-align:center;border-top:solid 1px #fff; border-bottom:solid 1px #fff;}
+.number{ border:solid 1px #eee;}
+.font_calls{ text-align:right; font-weight:bold; padding-right:5px; line-height:28px; border-bottom:solid 1px #eee; font-size:18px; color:#F47621;}
+.border_bot{ border-bottom:solid 1px #eee;}
+.waiting{ background-color:#FFE6E6; line-height:26px;border-top:solid 1px #fff; border-bottom:solid 1px #fff; padding-left:8px;}
+.waitbor{ border:solid 1px #FFE6E6;}
+.wait_tit{ border-bottom:solid 1px #FFB9B9; line-height:26px; padding-left:8px; font-weight:bold;background-color:#FFD7D7;}
+.wait_list{ border-bottom:solid 1px #eee; line-height:26px; padding-left:8px;}
+
+.col_green {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: green}
+.col_red {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: red}
+.col_lightblue {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: black; background-color: #ADD8E6}
+.col_blue {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: blue}
+.col_midnightblue {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: #191970}
+.col_purple {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: purple}
+.col_violet {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: black; background-color: #EE82EE} 
+.col_thistle {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: black; background-color: #D8BFD8} 
+.col_olive {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: #808000}
+.col_yellow {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: black; background-color: yellow}
+.col_khaki {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: black; background-color: #F0E68C}
+.col_orange {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: black; background-color: orange}
+.col_black {border-bottom:solid 1px #000; line-height:26px; padding-left:8px;color: white; background-color: black}
+.waitstation{ line-height:32px;padding-left:8px;}
+.wait_tit2{ border-bottom:solid 1px #000; line-height:26px; padding-left:8px; font-weight:bold;}
+.border_bottom{ border:solid 1px #000;}
+
+
+
+a:link {color: #555;	text-decoration: underline;font-size:12px;}
+a:visited {color: #555;	text-decoration: underline;font-size:12px;}
+a:hover {color: #ff0000;text-decoration: none;font-size:12px; }
+a:active {color: #555;	text-decoration: underline;font-size:12px;}
+
+a.top:link {color: #737373;	text-decoration: underline;font-size:14px;}
+a.top:visited {color: #737373;	text-decoration: underline;font-size:14px;}
+a.top:hover {color: #ff0000;text-decoration: none;font-size:14px; }
+a.top:active {color: #737373;	text-decoration: underline;font-size:14px;}

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+	<title>CCMS群发信息</title>
+
+	<style rel="STYLESHEET" type="text/css">
+	.containerTableStyle { overflow : auto;}
+	.standartTreeRow{	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; 	font-size : 12px; -moz-user-select: none; }
+	.selectedTreeRow{ background-color : navy; color:white; font-family : Verdana, Geneva, Arial, Helvetica, sans-serif; 		font-size : 12px;  -moz-user-select: none;  }
+	.standartTreeImage{ width:18px; height:18px;  overflow:hidden; border:0; padding:0; margin:0; }
+	.hiddenRow { width:1px;   overflow:hidden;  }
+	.dragSpanDiv{ 	font-size : 12px; 	border: thin solid 1 1 1 1; }
+	
+	</style>
+	<script src="checkTree.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/javascript">
+    // <![CDATA[
+		function sendMsg(){
+				if(tree2.getAllChecked()==""){
+					alert("请选择用户");
+					return;
+				}
+				if(document.getElementById("inputField").value == ""){
+					alert("请输入发送信息");	
+					return;
+				}
+				document.getElementById("names").value = tree2.getAllChecked();
+				document.getElementById("send").submit();
+				//window.close();
+		}
+	// ]]>
+	</script>
+</head>
+<body>
+	<form id="send" name="send" action="index.php?view=sendMsg">
+	<div id="treeboxbox_tree2" style="width:400px; height:318px;background-color:#f5f5f5;border :1px solid Silver;; overflow:auto;"></div>
+	<textarea id="inputField" name="inputField" rows="1" cols="50" style="width:400px; height:50px;"></textarea>
+    <input type="hidden" id="names" name="names" value="" />
+    <input type="hidden" id="view" name="view" value="sendMsg" /> 
+	<input type="button" name="button" value="发送" onclick="sendMsg();"/>
+	<script>
+			tree2=new dhtmlXTreeObject("treeboxbox_tree2","100%","100%",0);
+			tree2.setImagePath("treeImgs/");
+			tree2.enableCheckBoxes(1);
+			tree2.enableThreeStateCheckboxes(true);
+			tree2.loadXML("../vicidial/getxml.php");
+						
+	</script>
+    </form>
+</body>
+</html>

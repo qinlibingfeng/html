@@ -1,0 +1,456 @@
+2393---
+2393---
+2393---
+2393---
+2393---
+2393---Array
+2393
+2393
+2393
+2393-------SUCCESS: external_hangup function set - 1|2393
+-------SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2393-------SUCCESS: external_hangup function set - 1|2393
+++++++++++++++SUCCESS: external_status function set - U|2393
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2393:SUCCESS: external_hangup function set - 1|2393
+--SUCCESS: external_status function set - U|2393
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2393:SUCCESS: external_hangup function set - 1|2393
+--SUCCESS: external_status function set - U|2393
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2393:SUCCESS: external_hangup function set - 1|2393
+--SUCCESS: external_status function set - U|2393
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+bear3:SUCCESS: external_hangup function set - 1|bear3
+--SUCCESS: external_status function set - U|bear3
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+bear3:SUCCESS: external_hangup function set - 1|bear3
+--SUCCESS: external_status function set - U|bear3
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+aaron:SUCCESS: external_hangup function set - 1|aaron
+--SUCCESS: external_status function set - U|aaron
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:03:16:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:03:37:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:03:48:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:04:09:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:04:40:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:04:51:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:05:02:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:05:13:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:05:24:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:05:35:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+2011-06-28 18:06:16:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+++++++++++++++End++++++++++++++
+++++++++++++++Begin++++++++++++++
+++++++++++++++End++++++++++++++
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:07:49:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+2011-06-28 18:08:00:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:09:21:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+2011-06-28 18:09:32:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+2011-06-28 18:09:43:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+2011-06-28 18:09:54:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:10:55:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:11:26:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+sleeping 10-------------------
+2011-06-28 18:11:37:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:11:58:bear:SUCCESS: external_hangup function set - 1|bear
+--SUCCESS: external_status function set - U|bear
+
+2011-06-28 18:11:59:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+2011-06-28 18:12:10:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+2011-06-28 18:12:21:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:12:42:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+2011-06-28 18:12:53:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+2011-06-28 18:13:24:aaron2:SUCCESS: external_hangup function set - 1|aaron2
+--SUCCESS: external_status function set - U|aaron2
+
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------
+sleeping 10-------------------

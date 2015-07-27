@@ -1,0 +1,67 @@
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif, ËÎÌו;
+	font-size: 12px;
+}
+body {
+	//background-color: #EE9D06;
+	//background-color: blue;
+	margin-left: 0px;
+	margin-top: 100px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	//background-image:url(../../ccms/images/back-ccm-welcome.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	//background-size:100% 100%;  
+	//background-attachment:fixed; 
+	background-color: #EFF8FE;
+}
+#main_background{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-245px 0 0 -560px;
+	width:1121px;
+	height:446px;
+	background-image:url(../../ccms/images/back-ccm-welcome.png); }
+//#main{width:904px; margin:auto; padding:0px; }
+
+#main{	
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-70px 0 0 -452px;
+	width:904px;
+	height:300px;
+	}
+
+#left{ 
+	width:20px; 
+	margin:0px; 
+	padding:0px; 
+	height:234px; 
+	float:left; 
+	background-image:url(../../ccms/images/welcome_r2_c1.jpg);
+	background-repeat:no-repeat;
+	}
+#right{ 
+	width:20px; 
+	margin:0px; 
+	padding:0px; 
+	height:234px; 
+	float:left; 
+	background-image:url(../../ccms/images/welcome_r2_c8.jpg);
+	background-repeat:no-repeat;
+	}
+#center{ 
+	width:850px; 
+	margin:0px; 
+	padding:0px;
+	height:234px; 
+	float:left;
+	background-repeat:repeat-x; 
+	padding-top:15px; 
+	text-align:center;
+}
+#pic{ width:281px; margin:0px auto; padding-left:100px; float:left;}
+#pic3{ width:281px; margin:0px auto; padding-right:100px; float:right;}

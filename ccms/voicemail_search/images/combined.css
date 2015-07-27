@@ -1,0 +1,1422 @@
+.templateparameter {
+	FONT-SIZE: 9px; COLOR: darkblue
+}
+TABLE.confluenceTable {
+	MARGIN: 5px; BORDER-COLLAPSE: collapse
+}
+TD.confluenceTd {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid
+}
+TH.confluenceTh {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 4px; BACKGROUND: #f0f0f0; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center
+}
+.wiki-textarea {
+	WIDTH: 100%
+}
+.wiki-textfield {
+	WIDTH: 100%
+}
+.preformatted {
+	BORDER-RIGHT: 1px dashed; BORDER-TOP: 1px dashed; FONT-SIZE: 11px; MARGIN: 10px; BORDER-LEFT: 1px dashed; LINE-HEIGHT: 13px; BORDER-BOTTOM: 1px dashed; FONT-FAMILY: Courier
+}
+.preformattedHeader {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dashed; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: center
+}
+.preformattedContent {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #f0f0f0
+}
+.panel {
+	BORDER-RIGHT: 1px dashed; BORDER-TOP: 1px dashed; MARGIN: 0px 10px 10px; BORDER-LEFT: 1px dashed; BORDER-BOTTOM: 1px dashed
+}
+.panelHeader {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dashed; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: center
+}
+.panelContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #f0f0f0
+}
+.code {
+	BORDER-RIGHT: 1px dashed; BORDER-TOP: 1px dashed; FONT-SIZE: 11px; MARGIN: 10px; BORDER-LEFT: 1px dashed; LINE-HEIGHT: 13px; BORDER-BOTTOM: 1px dashed; FONT-FAMILY: Courier
+}
+.codeHeader {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dashed; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: center
+}
+.codeContent {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: left
+}
+.code-keyword {
+	COLOR: #000091
+}
+.code-object {
+	COLOR: #910091
+}
+.code-quote {
+	COLOR: #009100
+}
+.code-comment {
+	COLOR: #808080
+}
+.code-xml .code-keyword {
+	FONT-WEIGHT: bold
+}
+.code-tag {
+	COLOR: #000091
+}
+.linkerror {
+	BACKGROUND-COLOR: #fcc
+}
+UL#squaretab {
+	PADDING-LEFT: 0px; FONT: bold 8px Verdana, sans-serif; MARGIN-LEFT: 0px; WHITE-SPACE: nowrap
+}
+#squaretab LI {
+	DISPLAY: inline; LIST-STYLE-TYPE: none
+}
+#squaretab A {
+	BORDER-RIGHT: #fd8102 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #fd8102 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 2px; BORDER-LEFT: #fd8102 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #fd8102 1px solid
+}
+#squaretab A:link {
+	COLOR: #fff; BACKGROUND-COLOR: #fd8102; TEXT-DECORATION: none
+}
+#squaretab A:visited {
+	COLOR: #fff; BACKGROUND-COLOR: #fd8102; TEXT-DECORATION: none
+}
+#squaretab A:hover {
+	BORDER-LEFT-COLOR: #fd8102; BORDER-BOTTOM-COLOR: #fd8102; COLOR: #ffffff; BORDER-TOP-COLOR: #fd8102; BACKGROUND-COLOR: #fd8102; TEXT-DECORATION: none; BORDER-RIGHT-COLOR: #fd8102
+}
+#squaretab LI A#current {
+	BACKGROUND: white; COLOR: black
+}
+.panel {
+	BORDER-RIGHT: 1px dashed; BORDER-TOP: 1px dashed; MARGIN: 0px 10px 10px; BORDER-LEFT: 1px dashed; BORDER-BOTTOM: 1px dashed
+}
+.panelHeader {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: 1px dashed; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: center
+}
+.panelContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #f0f0f0
+}
+.minitab {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 1px; PADDING-LEFT: 8px; FLOAT: none; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 3px; FONT: bold 9px Verdana, sans-serif; MARGIN-LEFT: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: #bbbbbb 1px solid; TEXT-DECORATION: none
+}
+.selectedminitab {
+	BORDER-RIGHT: #bbbbbb 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #bbbbbb 1px solid; MARGIN-TOP: 1px; PADDING-LEFT: 0.5em; BACKGROUND: white; PADDING-BOTTOM: 3px; MARGIN-LEFT: 3px; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #000000; PADDING-TOP: 3px; BORDER-BOTTOM: white 1px solid; TEXT-DECORATION: none
+}
+.unselectedminitab {
+	BORDER-RIGHT: #bbbbbb 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #bbbbbb 1px solid; MARGIN-TOP: 1px; PADDING-LEFT: 0.5em; BACKGROUND: #bbbbbb; PADDING-BOTTOM: 3px; MARGIN-LEFT: 3px; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #bbbbbb 1px; TEXT-DECORATION: none
+}
+A.unselectedminitab:hover {
+	BORDER-LEFT-COLOR: #fd8102; BACKGROUND: #fd8102; BORDER-BOTTOM-COLOR: #fd8102; COLOR: #fd8102; BORDER-TOP-COLOR: #fd8102; BORDER-RIGHT-COLOR: #fd8102
+}
+A.unselectedminitab:link {
+	COLOR: white
+}
+A.unselectedminitab:visited {
+	COLOR: white
+}
+A.selectedminitab:link {
+	COLOR: black
+}
+A.selectedminitab:visited {
+	COLOR: black
+}
+.editPageInsertLinks {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px
+}
+.editPageInsertLinks A {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px
+}
+.helpheading {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; MARGIN: 10px 0px 0px; PADDING-TOP: 4px; BORDER-BOTTOM: #fd8102 1px solid; BACKGROUND-COLOR: #dddddd
+}
+.helpcontent {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 20px; PADDING-TOP: 4px; BACKGROUND-COLOR: #ffffff
+}
+.gridHover {
+	BACKGROUND-COLOR: #f9f9f9
+}
+.navmenu {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.optionPadded {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.optionSelected {
+	BORDER-RIGHT: #ddd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #ddd 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: -1px; BORDER-LEFT: #ddd 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ddd 1px solid; BACKGROUND-COLOR: #ffffcc
+}
+.optionSelected A {
+	FONT-WEIGHT: bold; COLOR: black; TEXT-DECORATION: none
+}
+.menuheading {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; PADDING-TOP: 4px; BORDER-BOTTOM: #fd8102 1px solid; BACKGROUND-COLOR: #dddddd
+}
+.menuitems {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 20px; PADDING-TOP: 4px; BACKGROUND-COLOR: #f0f0f0
+}
+.pagetitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #003366; FONT-FAMILY: Arial, sans-serif
+}
+.previewClass {
+	BORDER-RIGHT: gray 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: gray 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; BORDER-LEFT: gray 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: gray 1px solid; BACKGROUND-COLOR: #e8f1ff
+}
+.selectedPreview {
+	BORDER-RIGHT: #bbbbbb 1px inset; PADDING-RIGHT: 0px; BORDER-TOP: #bbbbbb 1px inset; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #bbbbbb 1px inset; PADDING-TOP: 0px; BORDER-BOTTOM: #bbbbbb 1px inset; BACKGROUND-COLOR: #eeeeee
+}
+.unselectedPreview {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-RIGHT-WIDTH: 0px
+}
+HTML {
+	HEIGHT: 100%
+}
+BODY {
+	HEIGHT: 100%
+}
+UL {
+	PADDING-LEFT: 2em
+}
+OL {
+	PADDING-LEFT: 2em
+}
+TR.disabled TD {
+	COLOR: #cccccc! important
+}
+.jiraform {
+	BORDER-RIGHT: #bbbbbb 1px solid; BORDER-TOP: #bbbbbb 1px solid; MARGIN: 0px auto; BORDER-LEFT: #bbbbbb 1px solid; BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-COLLAPSE: collapse; border-spacing: 0px
+}
+.jiraform .jiraform .formtitle {
+	FONT-SIZE: 14px; PADDING-TOP: 0.3em
+}
+.jiraformSectionBreak .formtitle {
+	FONT-SIZE: 14px; PADDING-TOP: 0.3em
+}
+.jiraform .jiraform {
+	MARGIN: 10px auto
+}
+.jiraformheader {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.jiraformSectionBreak {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.toolbar {
+	BORDER-RIGHT: #bbbbbb 1px dotted; PADDING-RIGHT: 5px; BORDER-TOP: #bbbbbb 1px dotted; PADDING-LEFT: 5px; FLOAT: right; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; BORDER-LEFT: #bbbbbb 1px dotted; PADDING-TOP: 3px; BORDER-BOTTOM: #bbbbbb 1px dotted; BACKGROUND-COLOR: #fefefe; TEXT-ALIGN: right
+}
+.tools {
+	BORDER-RIGHT: #bbbbbb 1px dotted; PADDING-RIGHT: 5px; BORDER-TOP: #bbbbbb 1px dotted; PADDING-LEFT: 5px; PADDING-BOTTOM: 3px; VERTICAL-ALIGN: middle; BORDER-LEFT: #bbbbbb 1px dotted; PADDING-TOP: 3px; BORDER-BOTTOM: #bbbbbb 1px dotted; BACKGROUND-COLOR: #fefefe; TEXT-ALIGN: left
+}
+.toolbar .sectionStart {
+	MARGIN-LEFT: 16px
+}
+.toolbar A {
+	TEXT-DECORATION: none
+}
+.toolbar A:hover {
+	TEXT-DECORATION: underline
+}
+.jiraform .instructions {
+	BORDER-BOTTOM: #bbbbbb 1px solid
+}
+.jiraform .jiraformfooter {
+	TEXT-ALIGN: center
+}
+.jiraform TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.jiraform .jiraformbody {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 10px; PADDING-TOP: 5px
+}
+.highlighted .jiraform {
+	BORDER-LEFT-COLOR: #c0c030; BORDER-BOTTOM-COLOR: #c0c030; BORDER-TOP-COLOR: #c0c030; BORDER-RIGHT-COLOR: #c0c030
+}
+.highlighted .jiraform  {
+	BORDER-LEFT-COLOR: #c0c030; BORDER-BOTTOM-COLOR: #c0c030; BORDER-TOP-COLOR: #c0c030; BORDER-RIGHT-COLOR: #c0c030
+}
+.highlighted .jiraformheader {
+	BACKGROUND-COLOR: #eeeebb
+}
+.fieldDescription {
+	DISPLAY: block; FONT-SIZE: 10px
+}
+.formErrors {
+	BACKGROUND-COLOR: #ffcccc! important
+}
+.formErrors .errorArea {
+	BACKGROUND-POSITION: 5px 0px; PADDING-LEFT: 30px; BACKGROUND-IMAGE: url(../images/icons/serious_warning_16.gif); MARGIN: 0px; BACKGROUND-REPEAT: no-repeat
+}
+.formErrors H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 3px 0px; COLOR: #cc0000; PADDING-TOP: 0px
+}
+.formErrors UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.centred {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+.rowClear {
+	BACKGROUND-COLOR: #ffffff
+}
+.quickSearchInput {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+.tableBorder {
+	BACKGROUND-COLOR: #bbbbbb
+}
+.rowHover {
+	CURSOR: pointer; BACKGROUND-COLOR: #f0f0f0
+}
+.cellHover {
+	CURSOR: pointer; BACKGROUND-COLOR: #fffff0
+}
+.rowHeaderDark {
+	BACKGROUND-COLOR: #bbbbbb
+}
+.rowHeader {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.rowNormal {
+	BACKGROUND-COLOR: #ffffff
+}
+.rowAlternate {
+	BACKGROUND-COLOR: #fffff0
+}
+.rowAlternateDark {
+	BACKGROUND-COLOR: #ffffde
+}
+.rowHighlighted {
+	BACKGROUND-COLOR: #eeeebb
+}
+TH {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+TH A {
+	TEXT-DECORATION: none
+}
+.pagetitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; MARGIN: 0px; FONT-FAMILY: Arial, sans-serif
+}
+.formtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 17px; MARGIN: 0px 0px 2px; COLOR: #003366; FONT-FAMILY: Arial, sans-serif
+}
+.bluetext {
+	COLOR: #003366
+}
+.formLabel {
+	BACKGROUND-COLOR: #fffff0
+}
+.fieldLabelArea {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #fffff0; TEXT-ALIGN: right
+}
+.fieldLabelAreaTop {
+	VERTICAL-ALIGN: top; BACKGROUND-COLOR: #fffff0; TEXT-ALIGN: right
+}
+.fieldLabelAreaBulk {
+	VERTICAL-ALIGN: top; WIDTH: 30%; BACKGROUND-COLOR: #fffff0; TEXT-ALIGN: left
+}
+.fieldLabelAreaSelected {
+	BACKGROUND-COLOR: #ffffdc
+}
+.fieldLabelAreaTopSelected {
+	BACKGROUND-COLOR: #ffffdc
+}
+.fieldValueArea {
+	VERTICAL-ALIGN: top
+}
+.fieldValueAreaSelected {
+	BACKGROUND-COLOR: #f8f8f8
+}
+.fieldLabelAreaTop {
+	TEXT-ALIGN: left
+}
+.required {
+	FONT-STYLE: italic
+}
+.label {
+	
+}
+.errLabel {
+	COLOR: red
+}
+.errMsg {
+	FONT-WEIGHT: bold; COLOR: #cc0000; TEXT-ALIGN: center
+}
+.errorBox {
+	BORDER-RIGHT: #c00 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #c00 1px solid; PADDING-LEFT: 4px; BACKGROUND: #fcc; PADDING-BOTTOM: 4px; BORDER-LEFT: #c00 1px solid; WIDTH: 90%; PADDING-TOP: 4px; BORDER-BOTTOM: #c00 1px solid
+}
+.errorBox2 {
+	BORDER-RIGHT: #c00 1px solid; BORDER-TOP: #c00 1px solid; BACKGROUND: #fcc; BORDER-LEFT: #c00 1px solid; BORDER-BOTTOM: #c00 1px solid
+}
+.checkboxLabel {
+	
+}
+.checkboxErrLabel {
+	COLOR: red
+}
+.replaced {
+	BACKGROUND-COLOR: #33cc66
+}
+BODY {
+	MARGIN: 0px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif, sans-serif
+}
+BLOCKQUOTE {
+	PADDING-LEFT: 1em; FONT-SIZE: 11px; MARGIN-LEFT: 0px; BORDER-LEFT: #3c78b5 2px solid; COLOR: black; FONT-FAMILY: Arial, Sans-Serif, sans-serif
+}
+.small {
+	FONT-SIZE: 9px
+}
+.smallfooter {
+	FONT-SIZE: 9px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.smallgrey {
+	FONT-SIZE: 9px; COLOR: #666
+}
+.smallgreyfooter {
+	FONT-SIZE: 9px; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.grey {
+	COLOR: #666
+}
+.lightgrey {
+	COLOR: #aaa
+}
+.warning {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.note {
+	FONT-WEIGHT: bold; COLOR: #900000
+}
+.red-highlight {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.red-highlight TD {
+	FONT-WEIGHT: bold; COLOR: #ff0000
+}
+.green-highlight {
+	FONT-WEIGHT: bold; COLOR: #006400
+}
+.bright-green-highlight {
+	FONT-WEIGHT: bold; COLOR: #33cc00
+}
+.red-highlight-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #8b0000
+}
+.green-highlight-small {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #006400
+}
+.blue-highlight {
+	FONT-WEIGHT: bold; COLOR: #6600ff
+}
+STRONG {
+	FONT-WEIGHT: bold
+}
+B {
+	FONT-WEIGHT: bold
+}
+.bolded {
+	FONT-WEIGHT: bold
+}
+.hiddenField {
+	COLOR: #999
+}
+.hidden {
+	PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-TOP-STYLE: none; LINE-HEIGHT: 0px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.hiddenButton {
+	MARGIN-LEFT: -2000px; POSITION: absolute
+}
+.basicHide {
+	DISPLAY: none
+}
+.fullyCentered {
+	MARGIN: auto; VERTICAL-ALIGN: middle; TEXT-ALIGN: center
+}
+.centered {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+.left-justified {
+	TEXT-ALIGN: left
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 24px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Sans-Serif
+}
+H2 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Sans-Serif
+}
+H3 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 16px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Sans-Serif
+}
+H4 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Sans-Serif
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Sans-serif
+}
+H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; MARGIN-BOTTOM: 0px; FONT-FAMILY: Arial, Sans-Serif
+}
+.trackback {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 0px 0px 5px; PADDING-TOP: 2px
+}
+.trackbackblogname {
+	FONT-SIZE: 10px; COLOR: #999
+}
+.trackbacklink {
+	
+}
+.trackbackexcerpt {
+	FONT-SIZE: 10px; COLOR: #999
+}
+.grid {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #ffffff
+}
+.bordered {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #ffffff
+}
+.grid TH {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.grid TD {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.bordered TH {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.bordered TD {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.grid TH {
+	BACKGROUND-COLOR: #f0f0f0
+}
+.defaultWidth {
+	WIDTH: 95%
+}
+.maxWidth {
+	WIDTH: 99%
+}
+.minWidth {
+	WIDTH: 1%
+}
+.standardField {
+	WIDTH: 30em
+}
+.minNoWrap {
+	WIDTH: 1%; WHITE-SPACE: nowrap
+}
+.noWrap {
+	WHITE-SPACE: nowrap
+}
+.emailHeader {
+	FONT-WEIGHT: bold
+}
+.date {
+	COLOR: #336699
+}
+.borderedBox {
+	BORDER-RIGHT: #bbbbbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #bbbbbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #bbbbbb 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #bbbbbb 1px solid
+}
+.borderedBoxBlack {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+.borderedTabBox {
+	BORDER-RIGHT: #bbbbbb 1px solid; BORDER-TOP: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; WIDTH: 100%; BORDER-BOTTOM: #bbbbbb 1px solid
+}
+.borderedTabBoxHidden {
+	BORDER-RIGHT: #bbbbbb 1px solid; BORDER-TOP: #bbbbbb 1px solid; DISPLAY: none; BORDER-LEFT: #bbbbbb 1px solid; WIDTH: 100%; BORDER-BOTTOM: #bbbbbb 1px solid
+}
+A.backToTop {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0px 3px; DISPLAY: block; PADDING-LEFT: 18px; FONT-SIZE: 10px; FLOAT: right; BACKGROUND-IMAGE: url(../images/icons/arrow_up_blue.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat; TEXT-DECORATION: none
+}
+A.backToTop:hover {
+	TEXT-DECORATION: underline
+}
+.gridTabBox {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #bbbbbb; BORDER-RIGHT-WIDTH: 0px
+}
+.gridTabBoxHidden {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #bbbbbb; BORDER-RIGHT-WIDTH: 0px
+}
+.selectedTabCell {
+	BACKGROUND-COLOR: #bbbbbb
+}
+.unselectedTabCell {
+	BACKGROUND-COLOR: #ffffff
+}
+.errorTabCell {
+	BACKGROUND-COLOR: #ffcccc
+}
+.selectedTabFont {
+	FONT-WEIGHT: bold; COLOR: #ffffff
+}
+.unselectedTabFont {
+	FONT-WEIGHT: bold
+}
+.gridBox {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #bbbbbb; BORDER-RIGHT-WIDTH: 0px
+}
+.issuePanelContainer {
+	BORDER-RIGHT: #bbbbbb 1px solid; BORDER-TOP: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; WIDTH: 100%; BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-COLLAPSE: collapse
+}
+.action-box {
+	BORDER-RIGHT: #bbbbbb thin solid; BORDER-TOP: #bbbbbb thin solid; MARGIN: 2px; BORDER-LEFT: #bbbbbb thin solid; BORDER-BOTTOM: #bbbbbb thin solid; BORDER-COLLAPSE: collapse
+}
+.action-container {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 0px; BORDER-COLLAPSE: collapse
+}
+.actionHeader {
+	PADDING-RIGHT: 2px; BORDER-TOP: #bbbbbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #f0f0f0
+}
+.actionLinks {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FLOAT: right; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: middle; PADDING-TOP: 2px; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: right
+}
+.changeHistory TD {
+	BORDER-RIGHT: #ffffff thin solid; BORDER-TOP: #ffffff thin solid; BORDER-LEFT: #ffffff thin solid; BORDER-BOTTOM: #ffffff thin solid
+}
+.actionContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #fff
+}
+.action-details {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: left
+}
+.action-links {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FLOAT: right; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #f0f0f0
+}
+.perm-link {
+	FLOAT: right
+}
+.action-body {
+	MARGIN: 2px
+}
+.action-spacer {
+	CLEAR: both
+}
+.alertHeader {
+	BORDER-RIGHT: #990000 2px solid; BORDER-TOP: #990000 2px solid; FONT-WEIGHT: bold; MARGIN: 4px; BORDER-LEFT: #990000 2px solid; BORDER-BOTTOM: #990000 2px solid
+}
+HR {
+	COLOR: #3c78b5; HEIGHT: 1px
+}
+.navItemOver {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Verdana, Sans-Serif; BACKGROUND-COLOR: #003366
+}
+.navItemOver A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.navItem {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; VERTICAL-ALIGN: middle; COLOR: #ffffff; FONT-FAMILY: Verdana, Sans-Serif
+}
+.navItem A {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.projectCategoryGroup {
+	BORDER-RIGHT: #bbbbbb 1px dashed; PADDING-RIGHT: 7px; BORDER-TOP: #bbbbbb 0px dashed; PADDING-LEFT: 7px; PADDING-BOTTOM: 7px; BORDER-LEFT: #bbbbbb 1px dashed; PADDING-TOP: 7px; BORDER-BOTTOM: #bbbbbb 1px dashed
+}
+SPAN.switch {
+	CURSOR: pointer; COLOR: #003366; TEXT-DECORATION: underline
+}
+TD.colHeaderLink {
+	FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.colHeaderLink A {
+	TEXT-DECORATION: none
+}
+.colHeaderOver {
+	FONT-SIZE: 12px; CURSOR: hand; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #aaaaaa
+}
+.colHeaderOver A {
+	TEXT-DECORATION: none
+}
+.colHeaderHighlight {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #aaaaaa
+}
+.colHeaderHighlight A {
+	TEXT-DECORATION: none
+}
+BODY {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+P {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+UL {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+OL {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+DL {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+LI {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+TD {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+TEXTAREA {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+INPUT {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+SELECT {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+BUTTON {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+OPTION {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+OPTGROUP {
+	FONT-SIZE: 12px; COLOR: black; FONT-FAMILY: Arial, Sans-Serif
+}
+TEXTAREA {
+	WIDTH: 90%
+}
+.textfield {
+	WIDTH: 90%
+}
+.footer {
+	TEXT-ALIGN: center
+}
+OPTGROUP {
+	PADDING-RIGHT: 2px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT-STYLE: normal; BACKGROUND-COLOR: #fffff0
+}
+OPTGROUP OPTION {
+	BACKGROUND-COLOR: #ffffff
+}
+OPTION.imagebacked {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 1px 2px; PADDING-LEFT: 20px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: middle; PADDING-TOP: 2px; BACKGROUND-REPEAT: no-repeat
+}
+OPTION.selectall {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 1px 2px; PADDING-LEFT: 20px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: middle; PADDING-TOP: 2px; BACKGROUND-REPEAT: no-repeat
+}
+SELECT.imagebacked OPTION {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 1px 2px; PADDING-LEFT: 20px; PADDING-BOTTOM: 2px; VERTICAL-ALIGN: middle; PADDING-TOP: 2px; BACKGROUND-REPEAT: no-repeat
+}
+OPTION.selectall {
+	BACKGROUND-IMAGE: url(../images/icons/table_sql_select_16.png); BORDER-BOTTOM: #0085eb 1px dotted
+}
+UL.square {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.square_blue {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.config {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.imagebacked {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.square_blue LI {
+	BACKGROUND-POSITION: 0em 0.4em; PADDING-LEFT: 13px; BACKGROUND-IMAGE: url(../images/icons/bullet_blue.gif); BACKGROUND-REPEAT: no-repeat
+}
+UL.square_blue LI UL {
+	BACKGROUND-POSITION: 0em 0.4em; BACKGROUND-REPEAT: no-repeat
+}
+UL.square_blue UL {
+	PADDING-LEFT: 0px; MARGIN: 0px; LIST-STYLE-TYPE: none
+}
+UL.square LI {
+	BACKGROUND-POSITION: 0em 0.4em; PADDING-LEFT: 13px; BACKGROUND-IMAGE: url(../images/icons/bullet_creme.gif); BACKGROUND-REPEAT: no-repeat
+}
+UL.square LI A {
+	FONT-WEIGHT: bold
+}
+UL.normal LI A {
+	FONT-WEIGHT: normal
+}
+UL.config LI A {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0em 2px; PADDING-LEFT: 20px; BACKGROUND-IMAGE: url(../images/icons/confg_16.gif); PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat
+}
+A.config {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0em 2px; PADDING-LEFT: 20px; BACKGROUND-IMAGE: url(../images/icons/confg_16.gif); PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat
+}
+UL.imagebacked LI {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0em 2px; PADDING-LEFT: 20px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat
+}
+A.sort {
+	PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0em 2px; PADDING-LEFT: 20px; BACKGROUND-IMAGE: url(../images/icons/sort_az_descending.png); PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-REPEAT: no-repeat
+}
+.wizardFooter {
+	PADDING-BOTTOM: 0.5em; VERTICAL-ALIGN: top; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: right
+}
+.darkFooter {
+	PADDING-BOTTOM: 0.5em; VERTICAL-ALIGN: top; PADDING-TOP: 0.5em; BACKGROUND-COLOR: #f0f0f0; TEXT-ALIGN: center
+}
+.wizardFooter #cancelButton {
+	MARGIN-LEFT: 1em
+}
+.wizardFooter .wizardInfo {
+	FONT-SIZE: 0.8em; FLOAT: left; VERTICAL-ALIGN: middle; TEXT-ALIGN: left
+}
+.codearea {
+	BORDER-RIGHT: #bbbbbb 1px dashed; PADDING-RIGHT: 1em; BORDER-TOP: #bbbbbb 1px dashed; PADDING-LEFT: 1em; PADDING-BOTTOM: 0em; MARGIN: 10px auto; BORDER-LEFT: #bbbbbb 1px dashed; WIDTH: 80%; PADDING-TOP: 0em; BORDER-BOTTOM: #bbbbbb 1px dashed; BACKGROUND-COLOR: #f6f6f6; moz-border-radius: 10px
+}
+PRE.codearea H4 {
+	BORDER-BOTTOM: #bbbbbb 1px solid
+}
+PRE.codearea TEXTAREA {
+	FONT-SIZE: 100%; MARGIN-BOTTOM: 1em; WIDTH: 100%; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 300px; BACKGROUND-COLOR: #f6f6f6; BORDER-BOTTOM-STYLE: none
+}
+TEXTAREA.code {
+	FONT-FAMILY: monospace
+}
+PRE.codearea TEXTAREA {
+	FONT-FAMILY: monospace
+}
+.subText {
+	FONT-SIZE: 10px
+}
+.selectDescription {
+	FONT-SIZE: 10px; VERTICAL-ALIGN: top
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.informationBox {
+	BORDER-RIGHT: #f0c000 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #f0c000 1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN-LEFT: auto; BORDER-LEFT: #f0c000 1px solid; WIDTH: 80%; MARGIN-RIGHT: auto; PADDING-TOP: 10px; BORDER-BOTTOM: #f0c000 1px solid; BACKGROUND-COLOR: #ffffce
+}
+.informationBox .error {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%; COLOR: #ff0000
+}
+.informationBox .success {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%; COLOR: #006400
+}
+.informationBox .info {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%; COLOR: #6600ff
+}
+TABLE.blank {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none! important; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none! important; border-spacing: 0px
+}
+TABLE.blank TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none! important; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+TABLE.blank TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none! important; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+TABLE.blank TH {
+	BACKGROUND-COLOR: #f0f0f0
+}
+TABLE.noPadding {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none; PADDING-TOP: 0px! important; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none; border-spacing: 0px
+}
+TABLE.noPadding TR {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none; PADDING-TOP: 0px! important; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none; border-spacing: 0px
+}
+.noPadding {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; PADDING-BOTTOM: 0px! important; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none; PADDING-TOP: 0px! important; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none; border-spacing: 0px
+}
+TABLE.minColumns TD {
+	WIDTH: 1%
+}
+TABLE.minColumns TH {
+	WIDTH: 1%
+}
+TD.normal {
+	WIDTH: auto! important
+}
+TH.normal {
+	WIDTH: auto! important
+}
+.nowrap {
+	WHITE-SPACE: nowrap
+}
+UL.optionslist {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL.optionslist LI {
+	BACKGROUND-POSITION: 0em 0.25em; PADDING-LEFT: 13px; BACKGROUND-IMAGE: url(../images/icons/bullet_creme.gif); BACKGROUND-REPEAT: no-repeat
+}
+UL.optionslist UL {
+	PADDING-LEFT: 13px; MARGIN: 0px 0px 0.5em
+}
+UL.optionslist UL LI {
+	PADDING-RIGHT: 1em; BACKGROUND-POSITION: 0em 0.25em; DISPLAY: inline; PADDING-LEFT: 13px; FONT-SIZE: 80%; BACKGROUND-IMAGE: url(../images/icons/navigate_right_16.gif); BACKGROUND-REPEAT: no-repeat; WHITE-SPACE: nowrap
+}
+.percentagegraphtable {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.percentagegraphtable TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#reloadImage {
+	MARGIN: 0px 0px 0px 5px; POSITION: relative; TOP: 3px
+}
+#issuetable .nav {
+	FONT-SIZE: 10px; VERTICAL-ALIGN: top
+}
+#issuetable .nav P {
+	FONT-SIZE: 10px; VERTICAL-ALIGN: top
+}
+#issuetable .nav IMG {
+	VERTICAL-ALIGN: top
+}
+#issuetable .parentIssue {
+	FONT-SIZE: 9px; COLOR: #666
+}
+#issuetable .summary {
+	FONT-SIZE: 12px; WIDTH: 20%
+}
+#subtask_container #summary_container {
+	WIDTH: 30%
+}
+#issuetable .description {
+	WIDTH: 30%
+}
+#issuetable .issueCount {
+	TEXT-ALIGN: center
+}
+#issuetable .status {
+	WHITE-SPACE: nowrap
+}
+#issuetable .resolution {
+	WHITE-SPACE: nowrap
+}
+#issuetable .assignee {
+	WHITE-SPACE: nowrap
+}
+#issuetable .reporter {
+	WHITE-SPACE: nowrap
+}
+#issuetable .issuekey {
+	WHITE-SPACE: nowrap
+}
+.redText {
+	COLOR: #990000
+}
+.greenText {
+	COLOR: #006400
+}
+.spaced {
+	MARGIN-LEFT: 2px; MARGIN-RIGHT: 2px
+}
+.projectPanel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; WIDTH: 100%; BORDER-TOP-STYLE: none! important; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none! important; BORDER-LEFT-STYLE: none! important; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none! important; border-spacing: 0px
+}
+.projectPanel .header {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; BACKGROUND-COLOR: #f0f0f0
+}
+.projectPanel .versionBanner {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; WIDTH: 100%; PADDING-TOP: 4px; BACKGROUND-COLOR: #fffff0
+}
+.localHelp {
+	LEFT: 5px; POSITION: relative; TOP: 3px
+}
+.helpLink {
+	
+}
+DIV.container {
+	MARGIN-LEFT: auto; OVERFLOW: hidden; WIDTH: 99%; MARGIN-RIGHT: auto
+}
+.leftColumn {
+	FLOAT: left; WIDTH: 49%
+}
+.rightColumn {
+	FLOAT: right; WIDTH: 49%
+}
+#adminMenu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; WIDTH: 170px; PADDING-TOP: 0px; BACKGROUND-COLOR: #f2f2f2
+}
+#adminMenu .section {
+	
+}
+#adminMenu .headerOpen {
+	PADDING-RIGHT: 3px; BACKGROUND-POSITION: 3px 7px; DISPLAY: block; PADDING-LEFT: 16px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; WIDTH: 152px; PADDING-TOP: 5px; BORDER-BOTTOM: #5f9acf 1px solid; BACKGROUND-REPEAT: no-repeat; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #e2e2e2; TEXT-DECORATION: none
+}
+#adminMenu .headerClosed {
+	PADDING-RIGHT: 3px; BACKGROUND-POSITION: 3px 7px; DISPLAY: block; PADDING-LEFT: 16px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; WIDTH: 152px; PADDING-TOP: 5px; BORDER-BOTTOM: #5f9acf 1px solid; BACKGROUND-REPEAT: no-repeat; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #e2e2e2; TEXT-DECORATION: none
+}
+#adminMenu .headerOpen {
+	BACKGROUND-IMAGE: url(../images/icons/navigate_down_10.gif)
+}
+#adminMenu .headerClosed {
+	BACKGROUND-IMAGE: url(../images/icons/navigate_right_10.gif)
+}
+#adminMenu UL {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 3px; PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-TOP: 5px; LIST-STYLE-TYPE: none
+}
+#adminMenu LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#adminMenu LI A {
+	BORDER-RIGHT: #f2f2f2 1px solid; PADDING-RIGHT: 0px; BACKGROUND-POSITION: 0.15em 0.3em; BORDER-TOP: #f2f2f2 1px solid; DISPLAY: block; PADDING-LEFT: 14px; BACKGROUND-IMAGE: url(../images/icons/bullet_creme.gif); PADDING-BOTTOM: 0px; BORDER-LEFT: #f2f2f2 1px solid; WIDTH: 147px; PADDING-TOP: 0px; BORDER-BOTTOM: #f2f2f2 1px solid; BACKGROUND-REPEAT: no-repeat
+}
+#adminMenu LI A:hover {
+	TEXT-DECORATION: none
+}
+.noteBox {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: 5px 5px; MARGIN-TOP: 0px; PADDING-LEFT: 30px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat
+}
+.warningBox {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: 5px 5px; MARGIN-TOP: 0px; PADDING-LEFT: 30px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat
+}
+.infoBox {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: 5px 5px; MARGIN-TOP: 0px; PADDING-LEFT: 30px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat
+}
+.tipBox {
+	PADDING-RIGHT: 5px; BACKGROUND-POSITION: 5px 5px; MARGIN-TOP: 0px; PADDING-LEFT: 30px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat
+}
+.noteBox A {
+	FONT-WEIGHT: bold
+}
+.warningBox A {
+	FONT-WEIGHT: bold
+}
+.infoBox A {
+	FONT-WEIGHT: bold
+}
+.tipBox A {
+	FONT-WEIGHT: bold
+}
+.noteBox {
+	BORDER-RIGHT: #f0c000 1px solid; BORDER-TOP: #f0c000 1px solid; BACKGROUND-IMAGE: url(../images/icons/warning_16.gif); BORDER-LEFT: #f0c000 1px solid; BORDER-BOTTOM: #f0c000 1px solid; BACKGROUND-COLOR: #ffffce
+}
+.warningBox {
+	BORDER-RIGHT: #c00 1px solid; BORDER-TOP: #c00 1px solid; BACKGROUND-IMAGE: url(../images/icons/serious_warning_16.gif); BORDER-LEFT: #c00 1px solid; BORDER-BOTTOM: #c00 1px solid; BACKGROUND-COLOR: #fcc
+}
+.infoBox {
+	BORDER-RIGHT: #3c78b5 1px solid; BORDER-TOP: #3c78b5 1px solid; BACKGROUND-IMAGE: url(../images/icons/information.gif); BORDER-LEFT: #3c78b5 1px solid; BORDER-BOTTOM: #3c78b5 1px solid; BACKGROUND-COLOR: #d8e4f1
+}
+.tipBox {
+	BORDER-RIGHT: #090 1px solid; BORDER-TOP: #090 1px solid; BORDER-LEFT: #090 1px solid; BORDER-BOTTOM: #090 1px solid; BACKGROUND-COLOR: #dfd
+}
+.warningBox H4 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; COLOR: #c00; PADDING-TOP: 0px
+}
+.filterFormCell {
+	BORDER-RIGHT: #bbbbbb 1px solid
+}
+.filterSummaryCell {
+	BORDER-RIGHT: #bbbbbb 1px solid
+}
+.filterFormCell {
+	VERTICAL-ALIGN: top; WIDTH: 300px
+}
+.filterFormCell #filterForm {
+	VERTICAL-ALIGN: top; WIDTH: 300px
+}
+.filterSummaryCell {
+	VERTICAL-ALIGN: top; WIDTH: 240px; BACKGROUND-COLOR: #f0f0f0
+}
+.fieldArea .fieldLabelArea {
+	WIDTH: 30%
+}
+.fieldArea .fieldValueArea {
+	WIDTH: 70%
+}
+.fieldArea {
+	
+}
+.sortArrow {
+	VERTICAL-ALIGN: middle; WIDTH: 11px; HEIGHT: 14px
+}
+#filterFormHeader TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; PADDING-TOP: 2px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #dddddd
+}
+.leftFormHeader {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; PADDING-TOP: 2px; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #dddddd
+}
+#modifiedMarker {
+	MARGIN-TOP: 3px; FLOAT: right; VERTICAL-ALIGN: middle; COLOR: #cc0000; MARGIN-RIGHT: 2px
+}
+#filterFormHeader A {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+#filterFormHeader .selectedItem {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+#filterFormHeader .item {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+#filterFormHeader .selectedItem {
+	COLOR: #ffffff; BACKGROUND-COLOR: #aaaaaa; TEXT-DECORATION: none
+}
+#filterForm .userpickerfield {
+	WIDTH: 85%
+}
+#filterForm .grouppickerfield {
+	WIDTH: 85%
+}
+#filterForm .childCascadingSelect {
+	MARGIN-TOP: 3px
+}
+#filterForm .standardInputField {
+	WIDTH: 85%
+}
+#filterForm .dateSearcher {
+	WIDTH: 85%
+}
+#filterForm .smallInputField {
+	WIDTH: 40px
+}
+#filterForm .periodSearcher {
+	WIDTH: 40px
+}
+#filterForm .rowHeader {
+	BORDER-TOP: #bbbbbb 1px solid
+}
+#filterForm .headerOpened {
+	PADDING-RIGHT: 3px; BACKGROUND-POSITION: 3px 7px; PADDING-LEFT: 16px; PADDING-BOTTOM: 5px; CURSOR: hand; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat
+}
+#filterForm .headerClosed {
+	PADDING-RIGHT: 3px; BACKGROUND-POSITION: 3px 7px; PADDING-LEFT: 16px; PADDING-BOTTOM: 5px; CURSOR: hand; PADDING-TOP: 5px; BACKGROUND-REPEAT: no-repeat
+}
+#filterForm .headerOpened {
+	BACKGROUND-IMAGE: url(../images/icons/navigate_down_10.gif)
+}
+#filterForm .headerClosed {
+	BACKGROUND-IMAGE: url(../images/icons/navigate_right_10.gif)
+}
+#filterForm .fieldDescription {
+	OVERFLOW: hidden; WIDTH: 205px
+}
+#filterForm SELECT {
+	WIDTH: 85%
+}
+#filterForm SELECT.standardInputField {
+	WIDTH: 85%
+}
+#filterForm .tableUnderline {
+	WIDTH: 100%
+}
+.calendarPicker {
+	FLOAT: right; MARGIN-RIGHT: 2px
+}
+.sectionHeaderOption {
+	PADDING-RIGHT: 2px; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; FONT-STYLE: normal; BACKGROUND-COLOR: #fffff0
+}
+.searcherValue {
+	BACKGROUND-POSITION: 0em 0.4em; PADDING-LEFT: 13px; BACKGROUND-IMAGE: url(../images/icons/bullet_blue.gif); BACKGROUND-REPEAT: no-repeat
+}
+.searcherValue .fieldLabel {
+	FONT-WEIGHT: bold
+}
+.searcherValue .fieldValue {
+	
+}
+.paramChanged {
+	FONT-WEIGHT: bold; COLOR: blue
+}
+.paramChanged A {
+	FONT-WEIGHT: bold; COLOR: blue
+}
+.paramRemoved {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.paramRemoved A {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.paramAdded {
+	FONT-WEIGHT: bold; COLOR: green
+}
+.paramAdded A {
+	FONT-WEIGHT: bold; COLOR: green
+}
+.periodDescription {
+	TEXT-TRANSFORM: lowercase
+}
+#projectRefreshPanel {
+	MARGIN-TOP: 3px; FONT-SIZE: 10px; MARGIN-BOTTOM: 3px; CURSOR: hand
+}
+#groupRefreshPanel {
+	MARGIN-TOP: 3px; FONT-SIZE: 10px; MARGIN-BOTTOM: 3px; CURSOR: hand
+}
+.spacer {
+	LINE-HEIGHT: 2px
+}
+.lead {
+	TEXT-TRANSFORM: capitalize
+}
+.tabContainer {
+	MARGIN-TOP: 10px
+}
+.tabHeader {
+	MARGIN-LEFT: 5px; OVERFLOW: hidden; WIDTH: 100%
+}
+.tabHeader A {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN-RIGHT: 5px; PADDING-TOP: 3px
+}
+.tabHeader A.selected {
+	COLOR: #ffffff; BACKGROUND-COLOR: #bbbbbb; TEXT-DECORATION: none
+}
+.tabHeader A:hover {
+	COLOR: #ffffff; BACKGROUND-COLOR: #bbbbbb; TEXT-DECORATION: none
+}
+.tabHeader A.selected:hover {
+	TEXT-DECORATION: underline
+}
+.tabContent {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.licensemessage {
+	FONT-SIZE: 10px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #ffffce; TEXT-ALIGN: center
+}
+.licensemessagered {
+	FONT-SIZE: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #ffcccc; TEXT-ALIGN: center
+}
+.licensemessagehl {
+	FONT-WEIGHT: bold; COLOR: #990000
+}
+.poweredbymessage {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.poweredbymessage A {
+	FONT-SIZE: 10px; COLOR: #666666; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.halfWidth {
+	WIDTH: 50%
+}
+UL.steps {
+	LIST-STYLE-TYPE: none
+}
+.steps {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; PADDING-BOTTOM: 0px; MARGIN: 5px 0px 0px 10px; PADDING-TOP: 0px
+}
+.steps .steps {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.steps LI {
+	BACKGROUND-POSITION: 0px 3px; PADDING-LEFT: 15px; BACKGROUND-REPEAT: no-repeat
+}
+.steps LI.current {
+	FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../images/icons/bullet_inprogress.gif)
+}
+.steps LI.todo {
+	FONT-WEIGHT: normal! important; BACKGROUND-IMAGE: url(../images/icons/bullet_notdone.gif)
+}
+.steps LI.done {
+	FONT-WEIGHT: normal! important; BACKGROUND-IMAGE: url(../images/icons/bullet_done.gif)
+}
+DIV.hr {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../images/icons/hr.gif) #fff no-repeat center 50%; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; HEIGHT: 15px
+}
+DIV.hr HR {
+	DISPLAY: none
+}
+.topBordered {
+	BORDER-TOP: #bbbbbb 1px solid; MARGIN-TOP: 5px; PADDING-TOP: 5px
+}
+.validHighlight {
+	FONT-WEIGHT: bold; COLOR: #009900
+}
+DIV.multiuserlist {
+	FLOAT: left; MARGIN-LEFT: 5px; min-width: 150px
+}
+UL.multiuserlist {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 5px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+LI.multiuserlist {
+	FONT-SIZE: 13px
+}
+DIV.multiuseroperations {
+	FLOAT: left; MARGIN-LEFT: 30px
+}
+TABLE.report {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM-STYLE: none; border-spacing: 0px
+}
+TABLE.report TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+TABLE.report TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+TABLE.report TH.reportHeading {
+	BACKGROUND-COLOR: #f0f0f0
+}
+TABLE.report TH.subHeading {
+	BACKGROUND-COLOR: #fffff0
+}
+TABLE.report TH.subHeading H3 {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+}
+TABLE.report .graphLabel {
+	FLOAT: right
+}
+TABLE.report .graphDescription {
+	FLOAT: right
+}
+TABLE.report .percentageGraph {
+	FLOAT: right
+}
+.graphLabel {
+	FONT-SIZE: 10px
+}
+.graphDescription {
+	FONT-SIZE: 10px
+}
+.percentageGraph {
+	FONT-SIZE: 10px
+}
+.graphLabel {
+	MARGIN-RIGHT: 1ex
+}
+.subHeading H3 {
+	FLOAT: left
+}
+.percentageGraph {
+	WIDTH: 100px
+}
+.percentageGraph .barSection {
+	DISPLAY: block; FLOAT: left
+}
+.subtleButton {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 80%; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#descriptionArea {
+	BORDER-RIGHT: #bbb 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #bbb 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 0px; VERTICAL-ALIGN: top; BORDER-LEFT: #bbb 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #bbb 1px solid
+}
+#viewLinks {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #ffffff
+}
+#viewLinks TH {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 6px; PADDING-BOTTOM: 2px; PADDING-TOP: 4px; BORDER-BOTTOM: #bbbbbb 1px solid; BACKGROUND-COLOR: #f0f0f0
+}
+#viewLinks .linkDescription {
+	MARGIN-BOTTOM: 5px
+}
+DIV.calendar {
+	POSITION: relative
+}
+.calendar {
+	BORDER-RIGHT: #bdb2bf 1px solid; BORDER-TOP: #bdb2bf 1px solid; FONT-SIZE: 11px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/normal-bg.gif); BORDER-LEFT: #bdb2bf 1px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #bdb2bf 1px solid; FONT-FAMILY: "trebuchet ms",verdana,tahoma,sans-serif
+}
+.calendar TABLE {
+	BORDER-RIGHT: #bdb2bf 1px solid; BORDER-TOP: #bdb2bf 1px solid; FONT-SIZE: 11px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/normal-bg.gif); BORDER-LEFT: #bdb2bf 1px solid; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #bdb2bf 1px solid; FONT-FAMILY: "trebuchet ms",verdana,tahoma,sans-serif
+}
+.calendar {
+	BORDER-LEFT-COLOR: #797979; BORDER-BOTTOM-COLOR: #797979; BORDER-TOP-COLOR: #797979; BORDER-RIGHT-COLOR: #797979
+}
+.calendar .button {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/title-bg.gif) repeat-x 0px 100%; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+.calendar .nav {
+	FONT-FAMILY: verdana,tahoma,sans-serif
+}
+.calendar .nav DIV {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/menuarrow.gif) no-repeat 100% 100%
+}
+.calendar THEAD TR {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/title-bg.gif) repeat-x 0px 100%; COLOR: #000
+}
+.calendar THEAD .title {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/title-bg.gif) repeat-x 0px 100%; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+.calendar THEAD .headrow {
+	
+}
+.calendar THEAD .name {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px; BORDER-BOTTOM: #797979 1px solid; TEXT-ALIGN: center
+}
+.calendar THEAD .weekend {
+	COLOR: #c44
+}
+.calendar THEAD .hilite {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/hover-bg.gif); PADDING-BOTTOM: 1px; PADDING-TOP: 2px; BORDER-BOTTOM: #797979 1px solid
+}
+.calendar THEAD .active {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 3px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/active-bg.gif); PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 3px; BORDER-BOTTOM: #797979 1px solid
+}
+.calendar THEAD .daynames {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/dark-bg.gif)
+}
+.calendar TBODY .day {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 2em; COLOR: #000; PADDING-TOP: 2px; FONT-FAMILY: verdana,tahoma,sans-serif; TEXT-ALIGN: right
+}
+.calendar TBODY .othermonth {
+	FONT-SIZE: 80%; COLOR: #999
+}
+.calendar TBODY .oweekend {
+	COLOR: #f99
+}
+.calendar TABLE .wn {
+	BORDER-RIGHT: #797979 1px solid; PADDING-RIGHT: 3px; PADDING-LEFT: 2px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/dark-bg.gif); PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.calendar TBODY .rowhilite TD {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/rowhover-bg.gif)
+}
+.calendar TBODY .rowhilite TD.wn {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/rowhover-bg.gif)
+}
+.calendar TBODY TD.today {
+	FONT-WEIGHT: bold
+}
+.calendar TBODY TD.hilite {
+	BORDER-RIGHT: #bbb 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #bbb 1px solid; PADDING-LEFT: 1px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/hover-bg.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #bbb 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #bbb 1px solid
+}
+.calendar TBODY TD.active {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px
+}
+.calendar TBODY TD.weekend {
+	COLOR: #c44
+}
+.calendar TBODY TD.selected {
+	BORDER-RIGHT: #797979 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #797979 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/active-bg.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #797979 1px solid; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #797979 1px solid
+}
+.calendar TBODY .disabled {
+	COLOR: #999
+}
+.calendar TBODY .emptycell {
+	VISIBILITY: hidden
+}
+.calendar TBODY .emptyrow {
+	DISPLAY: none
+}
+.calendar TFOOT .footrow {
+	BACKGROUND: #565; COLOR: #fff; TEXT-ALIGN: center
+}
+.calendar TFOOT .ttip {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/status-bg.gif) repeat-x 0px 0px; PADDING-BOTTOM: 2px; COLOR: #000; PADDING-TOP: 2px
+}
+.calendar TFOOT .hilite {
+	BORDER-RIGHT: #084 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #084 1px solid; PADDING-LEFT: 1px; BACKGROUND: #afa; PADDING-BOTTOM: 1px; BORDER-LEFT: #084 1px solid; COLOR: #000; PADDING-TOP: 1px; BORDER-BOTTOM: #084 1px solid
+}
+.calendar TFOOT .active {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; BACKGROUND: #7c7; PADDING-BOTTOM: 0px; PADDING-TOP: 2px
+}
+.calendar .combo {
+	BORDER-RIGHT: #797979 1px solid; BORDER-TOP: #797979 0px solid; DISPLAY: none; FONT-SIZE: 90%; Z-INDEX: 100; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/normal-bg.gif); LEFT: 0px; BORDER-LEFT: #797979 1px solid; WIDTH: 4em; CURSOR: default; COLOR: #000; BORDER-BOTTOM: #797979 1px solid; POSITION: absolute; TOP: 0px
+}
+.calendar .combo .label {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar .combo .label-IEfix {
+	WIDTH: 4em
+}
+.calendar .combo .hilite {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/hover-bg.gif); COLOR: #000
+}
+.calendar .combo .active {
+	FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/active-bg.gif); COLOR: #fff
+}
+.calendar TD.time {
+	PADDING-RIGHT: 0px; BORDER-TOP: #797979 1px solid; PADDING-LEFT: 0px; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/dark-bg.gif); PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-ALIGN: center
+}
+.calendar TD.time .hour {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/normal-bg.gif); PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.calendar TD.time .minute {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/normal-bg.gif); PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.calendar TD.time .ampm {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/normal-bg.gif); PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+.calendar TD.time .hour {
+	FONT-FAMILY: monospace
+}
+.calendar TD.time .minute {
+	FONT-FAMILY: monospace
+}
+.calendar TD.time .ampm {
+	TEXT-ALIGN: center
+}
+.calendar TD.time .colon {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.calendar TD.time SPAN.hilite {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/hover-bg.gif); COLOR: #000
+}
+.calendar TD.time SPAN.active {
+	BACKGROUND: url(/issues/includes/js/calendar/skins/aqua/active-bg.gif); COLOR: #fff
+}

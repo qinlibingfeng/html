@@ -1,0 +1,28 @@
+<html>
+<script src="/socket.io/socket.io.js""></script>
+
+
+<script>
+ 	var socket = io('http://172.17.1.90:8081');	
+ 	
+	socket.on('outbound', function (data) {
+	    console.log(data);
+	    alert("out:" + data.phone);
+	  }); 	
+ 	socket.on('inbound', function (data) {
+	    console.log(data);
+	    alert("in:" + data.phone);
+	  }); 	
+	  
+	function sd($agentid){
+		
+		$agentid = document.getElementById('phone').value;
+	  socket.emit('agent', {agent:$agentid});
+	}
+</script>
+<body>
+	<input type='text' id='phone' />
+	<input type='button' onClick='sd()' value="Ìá½»" />
+	
+</body>
+</html>

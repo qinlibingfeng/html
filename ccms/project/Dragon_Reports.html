@@ -1,0 +1,137 @@
+<html>
+<head>
+<script language = "JavaScript" type="text/javascript" src = "js/user.js"></script><!-- VERSION: 2.2.1-237   BUILD: 100510-2015   ADD: 999999   PHP_SELF: /ccms/admin.php-->
+<title>CCMS</title>
+<link type='text/css' rel='stylesheet' href='new_style/css/style.css' />
+<script language="javascript" type="text/javascript">
+	function small_menu_openwindow(url)
+			{
+			var wd_url=url;
+			var wd_width=screen.availWidth;
+			var wd_height=screen.availHeight;
+			var wd_top=15;
+			var wd_left=15;
+			var wd_toolbar=0;
+			var wd_menubar="no";
+			var wd_scrollbars="YES";
+			var wd_resizable="YES";
+			var wd_location="no";
+			var wd_status="no"; 
+			window.open (wd_url, '', 'height='+wd_height+', width='+wd_width+', top='+wd_top+', left='+wd_left+', toolbar='+wd_toolbar+', menubar='+wd_menubar+', scrollbars='+wd_scrollbars+', resizable='+wd_resizable+',location='+wd_location+', status='+wd_status);
+			}
+</script>
+</head>
+<BODY BGCOLOR=white marginheight=0 marginwidth=0 leftmargin=0 topmargin=0>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td class="right_centerbg">
+            <table width="750" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td class="right_centerbg">
+                    <div id="right_menu">
+                      <table border=0 cellspacing=0 cellpadding=0 width="100%"  backgroundxx="#ffcc00">
+                       <tr bgcolor='#ffcc00'>
+                        <td height="40"><font size="6" color="white"><b>Historical Reports</b></font></td>
+                       </tr>
+                      </table>
+                    </div>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+                      <tr style="display:none">
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>                
+                      <tr bgcolor="#c2c2c2">
+                        <td height="30" classxx="font_red_b"><font size="4" color="black">[ Inbound & Agent Reports ] </font></td>
+                        <td height="30" classxx="font_red_b"><font size="4" color="black">[ Outbound Reports ] </font></td>
+                      </tr>
+                      <tr style="display:none">
+                        <td valign="top">&nbsp;</td>
+                        <td valign="top">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td width="50%" valign="top" align="center">
+                          <table width="100%" border="0"  cellpadding="0" cellspacing="0">
+                            <tr>
+                              <td class="report_link">
+                              <a href="#" onClick="small_menu_openwindow('http://10.201.107.86:8080/pentaho/Pivot?solution=CCMS&path=DRAGON&action=Inbound%20Detail%20Report.analysisview.xaction&userid=joe&password=password');">
+                              Inbound Detail Report
+                              </a>
+                              </td>
+                            </tr>     
+                            <tr>
+                              <td class="report_link">&nbsp;</td>
+                            </tr> 
+                            <tr>
+                              <td class="report_link">
+                                  <a href="#" onClick="small_menu_openwindow('http://10.201.107.86:8080/pentaho//content/reporting/reportviewer/report.html?userid=joe&password=password&solution=CCMS&path=%2FDRAGON&name=Inbound+Call+Monthly+Report+For+Dragon.prpt&locale=zh_CN&autoSubmit=false&VIEWER=dragon#userid%253Djoe%2526password%253Dpassword%2526solution%253DCCMS%2526path%253D%25252FDRAGON%2526name%253DInbound%252BCall%252BMonthly%252BReport%252BFor%252BDragon.prpt%2526locale%253Dzh_CN%2526autoSubmit%253Dfalse%2526VIEWER%253Ddragon');">
+                                  Inbound Call Monthly Report For Dragon
+                                  </a>
+                              </td>
+                            </tr>                     
+                            <tr>
+                                <td class="report_link">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="report_link">
+                                <a href="#" onClick="small_menu_openwindow('http://10.201.107.86:8080/pentaho//content/reporting/reportviewer/report.html?userid=joe&password=password&solution=CCMS&path=%2FAgent&name=Agent+Work+Time+Report.prpt&locale=zh_CN&autoSubmit=false&VIEWER=dragon#userid%253Djoe%2526password%253Dpassword%2526solution%253DCCMS%2526path%253D%25252FAgent%2526name%253DAgent%252BWork%252BTime%252BReport.prpt%2526locale%253Dzh_CN%2526autoSubmit%253Dfalse%2526VIEWER%253Ddragon');">
+                                Agent Work Time Report
+                                </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="report_link">
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                              <td class="report_link">
+								&nbsp;
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td width="50%" valign="top" align="center">
+                            <table width="100%" border="0"  cellpadding="0" cellspacing="0">
+                    
+                              <tr>
+                                <td class="report_link">
+                                <a href="#" onClick="small_menu_openwindow('http://10.201.107.86:8080/pentaho/Pivot?solution=CCMS&path=DRAGON&action=Outbound%20Detail%20Report.analysisview.xaction&userid=joe&password=password');">
+                                Outbound Detail Report
+                                </a>
+                                </td>
+                              </tr>
+                            
+                              <tr>
+                                <td class="report_link">&nbsp;</td>
+                              </tr>                  
+                              <tr>
+                                <td class="report_link">
+                                <a href="#" onClick="small_menu_openwindow('http://10.201.107.86:8080/pentaho//content/reporting/reportviewer/report.html?userid=joe&password=password&solution=CCMS&path=%2FOutbound&name=Outbound+Call+Daily+Report.prpt&locale=zh_CN&autoSubmit=false&VIEWER=dragon#userid%253Djoe%2526password%253Dpassword%2526solution%253DCCMS%2526path%253D%25252FOutbound%2526name%253DOutbound%252BCall%252BDaily%252BReport.prpt%2526locale%253Dzh_CN%2526autoSubmit%253Dfalse%2526VIEWER%253Ddragon');">
+                                Outbound Call Daily Report
+                                </a>
+                                </td>
+                              </tr>
+                    
+                              <tr>
+                                <td class="report_link">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td class="report_link">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td class="report_link">&nbsp;</td>
+                              </tr>                                    
+                            </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <div id="right_menu"></div>
+                  </td>
+                </tr>
+            </table>
+        </TD>
+    </TR>
+</TABLE>
+</BODY>

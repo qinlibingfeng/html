@@ -1,0 +1,131 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px 0px;
+	overflow-x:hidden;
+	font-family:"宋体";
+	font-size:5px;
+	}
+	
+div.scroll_callback{
+	height:300px; 
+	width:620px; 
+	overflow:scroll;
+	}
+	
+div.scroll_list{
+	height:400px; 
+	width:140px; 
+	overflow:scroll;
+	}
+	
+
+div.text_input{
+	overflow:auto; 
+	}
+
+
+/*Add css by fnatic*/
+a.pausedcode{
+	color:#FF6600;
+	font-weight:bold;
+	}
+	
+
+.ScriptPane1{
+	width:820px!important;
+	*width:100%;
+	_width:100%;
+	} 
+	
+#hidden_show_control{
+	 float:left;
+	 }
+	 
+#button_pannel{ 
+     float:left;
+	 width:170px;
+	 }
+	 
+#pannel_img{ 
+    cursor:pointer;
+    }
+ 
+div.button_link{
+	 text-align:left;
+	 margin:5px 0px 0px 0px;
+	 }
+	 
+div.button_link span{
+	margin:0px 0px;
+	}
+	
+
+	
+div.volume_button{ 
+    text-align:left; 
+	margin-left:3px;
+	}
+	
+#MainTable td{
+	vertical-align:middle; 
+	text-align:left;
+	}
+	
+.MainStatuSDiv{
+	 width:75%;
+	 height:20px;
+	 float:left;
+	 color:red;
+	 }
+	 
+.queuediv{ 
+     float:left; 
+	 width:20%;
+	 }
+	 
+.banner_text_2{ 
+  width:745px!important; 
+  *width:755px;
+  }
+   
+.transfer_table{
+	width:100%;
+	}
+	
+.transfer_table tr{
+	line-height:25px;
+	height:25px;
+	}
+	
+.transfer_table td{
+	text-align:left;
+	vertical-align:bottom;
+	padding:5px 5px;
+	}
+	
+.transfer_table td.title{
+	border:1px solid #FAE6A0;
+	text-align:left;
+	padding-left:5px;
+	font-weight:bold; 
+	}
+	
+.transfer_table td a {
+	color:#FF9900;
+	}
+	
+ #SendDTMFdiv{
+	 margin-bottom:5px;
+	 }
+	 
+ .agent_info_table{
+	  width:100%;
+	  font-size:11px;
+	  }
+	  
+ .agent_info_table th{
+	 text-align:left;
+	 padding:3px 3px;
+	 }
+

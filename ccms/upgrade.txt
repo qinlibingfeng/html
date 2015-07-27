@@ -1,0 +1,164 @@
+版本名称：CCMS3.0.1(Build01)
+修改内容：
+1、增加“强制快速导入”选项
+2、手动外拨增加“拨打内线”选项
+3、增加User批量拷贝功能
+4、当recording_log中vicidial_id为空时无法下载录音
+5、Search Call Log是没有按照正确的unique-id +1，-1流程查找录音记录
+6、ring模式下，在实时报表的“队列”中，不能显示当前正在排队的数量
+7、Mysql数据库重启后，Agent注销，重新登录，内嵌Vtiger数据库报错，见附件
+8、增加Auto Submit Dispo选项
+9、电话挂断后弹出小结界面，这时还可以点击手动外拨链接进行外拨
+10、ring模式下，有些坐席接通电话后，界面仍会显示“分机振铃”，而不会显示“XXX个电话在等待”
+11、手动外拨时，Agent Call Performance Report\Group Call Performance Report的Talk Time现在是按点击拨号到通话结束的时间来统计，应该是按电话接通到通话结束的时间来统计
+12、所有外拨模式（手动外拨/点击外拨)自动产生的暂停原因都为Dial
+13、增加分机批量增加功能
+14、在某些修改或者操作后会导致User表Vicidial_Recording=''或VICIDIAL_Recording_Override=''，这种情况就会造成该帐户不录音
+15、对于手动外拨的通话，在Real-Time Main Report/Real-Time Summary Report中，应在“实时通话统计”、“通话”项中显示数量
+16、调整vtiger潜在客户字段排列
+17、优化电话弹屏详细信息页面
+18、IVR掉线率不应计算非工作时间的通话
+19、Outbound类历史报表需统计当天的数据
+20、<Agent Work Time Report> AUX时间应不包括暂停原因为Dial的记录
+21、在Agent/Group Call Performance Report中增加坐席的中文名字段
+22、Agent类历史报表应统计当天数据
+23、增加8311 MixMonitor (WAV) 录音模式
+24、Vtiger中按比例分派Lead时，有时候会出现找不到对象的错误
+25、优化“轮流分派”算法
+26、转录音使用GSW格式参数后，生成的录音文件音量很小
+27、在Inbound项目中，开启实时报表，会造成数据库锁表
+28、通过技能组分派通话给话务员前客户听到的"滴"一声要消除
+29、在Search Call Log中，查询条件中的Customer Phone没有做去空格处理，导致查询条件包含空格时，查询不出记录
+30、outbound时，当一通电话打出去，客户不接时，Agent点击挂断，选择小结项后，会将小结项更新到最后一条接通的记录
+31、确定my.cnf中所有参数
+
+
+版本名称：CCMS3.0.2(Build01)
+修改内容：
+1. 合并<普通导Lead><快速导Lead><强制快速导Lead>
+2. CCMS Admin部分页面程序改为读取报表服务器
+3. 增加智能路由(Intelligent Route)模块逻辑处理
+4. 增加判断是否为VIP用户的“CCMS_VIP”智能路由
+5. 清理CRM垃圾数据
+6. Search Call Log中，查询出的结果中，Outbound记录的phone,to字段的值应去除前缀（Agent Call Detail Report中Outbound记录的to字段也需去除前缀）
+7. 记录每个用户登录和登出CCMS Admin页面的时间
+8. CCMS Agent页面重复登录只需要提示不可强退已登录用户
+9. 增加智能路由(Intelligent Route)模块管理界面
+10. ring模式下拨通客户电话，后转接的ring模式的agent，对方agent自动接通后挂断
+11. ring模式下的agent转入电话时分机不响铃
+12. 增加客户满意调查 (CSAT)模块逻辑处理
+13. 增加客户满意调查 (CSAT)模块管理界面
+14. 将DragonPass项目的CSAT作为产品默认CSAT
+15. 取消<Real-Time>和<Historical>查询条件
+16. 增加客户满意调查 (CSAT)模块报表
+17. 查询号码如输入非数字字符可提示用户“请输入数字”
+18. 默认打开CRM详细页面的导航功能
+19. ring模式下，使用分机按键外拨通话后，按下分机挂断键，Agent界面仍显示“通话中电话”，客户电话也不会挂断
+20. ring模式下，在小结页面，用拨号龟外拨，提示“请先提交电话小结”，小结完成后用页面或者拨号龟外拨电话都无法接通
+21. 更改所有服务器配置的默认IP为127.0.0.1
+22. 小结时增加“拨打下一个”复选框
+23. 在CCMS Admin的DNC配置的Detail信息的列表中增加“Notes”列。
+24. 增加短信回复模块
+25. 增加与ACCOUNT模块集成
+26. 直线分机的录音执行了转移FTP服务器后无法下载
+27. 在In-Group增加Agent Follow Up选项
+28. CRM中文翻译后会导致有些文字丢失
+29. CS集成接口开发
+30. ring模式下，无电话进线，Agent页面显示“XXX个转接电话在等待”
+31. 修改《Inbound Call Monthly Report》和《Outbound Call Daily Report》两张报表，增加Total统计
+32. 增加默认短信发送网关(Default SMS Gateway)模块
+33. 拷贝Campaign时不拷贝Call Result
+34. 在CCMS Agent增加一个定时自动小结功能
+35. 在后台Admin->Campaigns->Lead Recycle中的AVAILABLE LEADS TODAY数量在每月31号统计不正确
+36. TVBOB项目在升级CCMS3.0.1后，在Search Call Log中还出现下载不到录音现象。
+37. TVBOB项目在Auto Dial模式下，当该Campaign后台没有配置默认小结项时，Agent通话完挂断电话后，不选任何小结项仍可以保存
+38. 直线分机的录音无法下载，但在recording_log可以查询到对应vicidial_id的数据
+39. 恢复Rating字段
+40. CRM工作流完善SMS Task
+41. 执行转移录音到FTP的脚本后，没有更新recording_log表的location字段
+42. 优化ccms_live_phones表和ccms_queue_log表
+43. Vtiger_Search页面增加多一个参数控制，判断使用高性能方式还是低效能方式
+44. 一个Campaign可支持Ring和Auto两种技能组
+45. Agent页面中点击“手动外拨号码”拨打黑名单号码，判断时没做去空格处理，导致输入的黑名单号码前如有空格可以拨打出去
+46. 在转接面板中盲转外线的时候，应该在外呼号码前加入该Campaign中配置的前缀
+47. 修改归档脚本，使归档完成后，能优化备机call_log_all,vicidial_log_all,vicidial_agent_log_all三个表
+48. 实时报表中，不能显示Remote Agent的实时状态
+49. 普通导Lead过程中发现页面停止刷新，Lead数据停止导入到数据库的情况。
+
+
+版本名称：CCMS3.0.2(Build02)
+修改内容：
+1. <Inbound Abandoned Call Detail Report>需要列出IVR的Abandoned Call
+2. 在GZ Pool上，新部署的CTVAS项目，Agent在保存Lead信息后页面出现“无法显示网页错误”
+3. 某些agent登陆后无法录音
+4. v3.0.2升级文档DB部署更新数据库需增加优化数据库步骤
+5. 所有选择用户下拉框都需要按字母顺序排序
+6. 在CTVAS项目分派Lead时出现异常
+7. Search Call Log当搜索条件比较大时（1年）系统反应慢
+8. CCMS Report中Agent call performance report中Talk Time和AVG Talk Time显示错误的时间838:59:59
+9. 更改默认的内存表上限为512M
+10. TVBOB项目的后台Admin->Add-Delete Number From DNC中，黑名单号码在list detail中，却无法删除。删除时提示“該號碼不在DNC list中”
+11. 将vicidial数据库里所有表编码转换为utf8_unicode_ci
+12. Search Call Log中，查询出的结果中，Outbound记录的phone,to字段的值应去除前缀（Agent Call Detail Report中Outbound记录的to字段也需去除前缀）
+13. Agent通过CCMS Agent页面（即通过Meeting Room）拨打客户电话时，偶尔会出现双方听到的音量过小的情况
+14. 当Campaign的"拨打下一个"按钮显示时,电话进线，agent提交小结后，"拨打下一个"按钮会消失
+15. 缩小自动删除vicidial_manager的间隔为15分钟
+16. 将技术员状态列表改为Smarty框架
+17. vtiger来电弹屏时，显示错误信息
+18. vicidial_manager和vicidial_live_agents默认为MEMORY
+19. 执行ADMIN_update_server_ip.pl 脚本时会将/etc/astguiclient.conf中备份数据库的配置清除
+20. 定时脚本AST_flush_manager.pl在删除数据时，平均花费5s，导致Agent界面操作反应慢
+21. 把AST_flush_DBqueue.pl中删除vicidial_manager数据的脚本分离出来
+22. ring模式下，多用户(60个人)同时外拨时，存在问题
+23. 平安钟项目的Hot Line在Ring模式下接听电话时出现派Call失败提示，需要点击暂停再恢复才能接听电话
+
+
+版本名称：CCMS3.0.3(Build01)
+修改内容：
+1、<Phone>字段(数据库为extension)在Web Agent中都应该为分机号
+2、话务员电话小结报表标题写错
+3、Lists管理模块增加Import Leads From CSV/Import Leads From LDMS/Assign Leads三个子菜单
+4、DID分时段报表标题写错
+5、验证插入TDM400P语音卡后语音质量是否有改善
+6、创建和修改Phone时取消<Voicemail Box>必填的限制
+7、auto dial时，实时报表的“实时通话统计”、“实时话务员统计”中的“通话”、“振铃”显示不对
+8、Agent通过CCMS Agent页面（即通过Meeting Room）拨打客户电话时，偶尔会出现双方听到的音量过小的情况
+9、在vtiger中删除\批量删除Lead时，不要同步删除vicidial中的Lead
+10、定时脚本AST_flush_manager.pl在删除数据时，平均花费5s，导致Agent界面操作反应慢。
+11、话务员在通话过程中可以提取队列中的通话
+12、在GZ Pool上，新部署的CTVAS项目，Agent在保存Lead信息后页面出现“无法显示网页错误”
+13、使用了新版本Search Call Log版本，当vicidial.recording_log.vicidial_id字段为空时录音依然无法下载
+14、当 CCMS Web 和 CRM Web 部署在不同服务器时，登录CCMS Agent后，不能同时登录CRM（Vtiger）。
+15、CAMPAIGN信息应显示在LIST ID附近，以便用户查看
+16、CRM Leads默认视图增加List ID字段，以便用户查看
+17、Outbound Lead Status Report报表按下View Report没有数据显示
+18、Agent Call Performance Report 的 Calls 与 Outbound Call Daily Report 的 Calls 统计不一致
+19、CCMS Report中Agent call performance report中Talk Time和AVG Talk Time显示错误的时间838:59:59
+20、导入数据时默认为UTF-8编码
+21、在报表Outbound List Detail Report的基础上添加2个搜索条件
+22、Agent拨打020-86132888会经常断线
+23、Inbound Call Monthly Report、Outbound Call Daily Report、Agent Outbound Call Report报表，当查询的数据量比较大时（3个月），会显示“无法显示网页”
+24、<Inbound Abandoned Call Detail Report>需要列出IVR的Abandoned Call
+25、CCMS报表Outbound List Call Result Report和Outbound List Detail Report每次只能导出1万条记录
+26、增加Outbound List Call Result Report
+27、新增加一个Agent Outbound Call Report
+28、增加IVR Log Detail Report （IVR日志详细报表）
+29、增加处理IVR Log的AGI
+30、所有选择用户下拉框都需要按字母顺序排序
+31、ring模式下，多用户(60个人)同时外拨时，存在问题
+32、把AST_flush_DBqueue.pl中删除vicidial_manager数据的脚本分离出来
+33、ring模式下，使用分机按键外拨通话后，按下分机挂断键，Agent界面仍显示“通话中电话”，客户电话也不会挂断
+34、小结时增加“拨打下一个”复选框
+35、增加客户满意调查 (CSAT)模块管理界面
+36、记录每个用户登录和登出CCMS Admin页面的时间
+37、增加智能路由(Intelligent Route)模块管理界面
+38、CCMS Agent页面重复登录只需要提示不可强退已登录用户
+39、In-Group增加Ring Start Launch配置
+40、执行ADMIN_update_server_ip.pl 脚本时会将/etc/astguiclient.conf中备份数据库的配置清除
+41、vtiger来电弹屏时，显示错误信息
+42、"当Campaign的""拨打下一个""按钮显示时,电话进线，agent提交小结后，""拨打下一个""按钮会消失"
+43、"Search Call Log中，查询出的结果中，Outbound记录的phone,to字段的值应去除前缀（Agent Call Detail Report中Outbound记录的to字段也需去除前缀）"
+44、平安钟项目的Hot Line在Ring模式下接听电话时出现派Call失败提示，需要点击暂停再恢复才能接听电话。
+45、Search Call Log当搜索条件比较大时（1年）系统反应慢
+46、在CTVAS项目分派Lead时出现异常
+47、某些agent登陆后无法录音

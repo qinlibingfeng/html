@@ -1,0 +1,20 @@
+#数据库
+
+#管理员表
+create table admin(
+	aid int not null auto_increment primary key,
+	aname varchar(100) not null default '',
+	apwd varchar(100) not null default '',
+	alastlogin int not null default 0
+)engine=myisam default charset=utf8;
+
+#通讯录表
+create table contract(
+	cid int not null auto_increment primary key,
+	cname varchar(50) not null default '',
+	csex int not null default 0,
+	cbirth int not null default 0,
+	ctel varchar(100) not null default '',
+	caddr varchar(200) not null default ''
+)engine=myisam default charset=utf8;
+

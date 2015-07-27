@@ -1,0 +1,536 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CCMS</title>
+
+	<link type="text/css" href="../ui/themes/base/jquery.ui.all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="../ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css">
+	<link type="text/css" href="../ui/demos/demos.css" rel="stylesheet" />
+	<script type="text/javascript" src="../ui/jquery-1.6.2.js"></script>
+	<script type="text/javascript" src="../ui/external/jquery.bgiframe-2.1.2.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.core.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.mouse.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.button.js"></script>
+
+	<script type="text/javascript" src="../ui/ui/jquery.ui.draggable.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.position.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.resizable.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.dialog.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.effects.core.js"></script>
+	<script type="text/javascript" src="../ui/ui/jquery.ui.datepicker.js"></script>
+
+	<script type="text/javascript" src="../ui/ui/jquery.ui.accordion.js"></script>
+	
+	<script language="Javascript">	
+	
+		$(function() {
+		$( "a", ".button_link" ).button();
+	});
+	
+		$(function() {
+		$( "#accordion" ).accordion();
+	});
+		
+	function showBox(){
+	
+				$("#ShowFromCallInfoDIV").dialog
+				({ draggable: false,
+					resizable:false ,
+					width:'250',
+					height:'auto',
+					modal: false,
+					position:["left","bottom"]
+//					title:"Show From Call Info"
+				});
+				$("#ShowFromCallInfoDIV").dialog('open');
+				
+	}
+
+	
+	</script>
+
+
+
+
+
+<style type="text/css">
+<!--
+	body{margin:0px 0px;overflow-x:hidden;font-size:12px;}
+	div.scroll_list {height: 400px; width: 140px; overflow: scroll;}
+	div.scroll_script {height: 523px; width: 920px; background:#FFCC99; overflow: scroll; font-size: 12px;  font-family:"宋体";}
+	div.text_input {overflow: auto; font-size: 10px;  font-family:"宋体";}
+   .body_text {font-size: 12px;  font-family:"宋体";}
+   .queue_text_red {font-size: 12px;  font-family:"宋体"; font-weight: bold;color:red;}
+   .queue_text {font-size: 12px;  font-family:"宋体"; color: black}
+   .preview_text {font-size: 12px;  font-family:"宋体"; background: #F46E0B;font-weight:bold}
+   .preview_text_red {font-size: 12px;  font-family:"宋体"; background: #FFCCCC}
+   .banner_text {font-size:12px; font-family:"宋体"; color:#FFFFFF; font-weight:bold}
+   .body_small {font-size: 12px;  font-family:"宋体";}
+   .body_tiny {font-size: 12px;  font-family:"宋体";}
+   .log_text {font-size: 12px;  font-family:"宋体";}
+   .log_text_red {font-size: 12px;  font-family:"宋体"; font-weight: bold; background: #FF3333}
+   .log_title {font-size: 12px;  font-family:"宋体"; font-weight: bold;}
+   .sd_text {font-size: 12px;  font-family:"宋体"; font-weight: bold;}
+   .sh_text {font-size: 12px;  font-family:"宋体"; font-weight: bold;}
+   .sb_text {font-size: 12px;  font-family:"宋体";}
+   .sk_text {font-size: 12px;  font-family:"宋体";}
+   .skb_text {font-size: 12px;  font-family:"宋体"; font-weight: bold;}
+   .ON_conf {font-size: 12px;  font-family:"宋体";background: #FFFF99}
+   .OFF_conf {font-size: 12px;  font-family:"宋体";background: #FFCC77}
+   .cust_form {font-family:"宋体"; font-size: 10px; overflow: hidden}
+   .cust_form_text {font-family:"宋体"; font-size:12px; overflow: auto}
+    a {font-family:"宋体";font-size:12px;color:#FF9900;}
+	/*Add css by fnatic*/
+   .pausecode_tb tr{height:22px;line-height:22px;}
+   a.pausedcode{color:#FF9900;font-weight:bold;} 
+   #hidden_show_control{float:left;}
+   #button_pannel{ float:left;width:170px; margin-top:0px;}
+   #pannel_img{ cursor:pointer;}
+
+   div.button_link a{width:100%;}
+
+   div.volume_button{ text-align:left; margin-left:3px;}
+   #MainTable td {vertical-align:middle; text-align:left;}
+   .queuediv{ float:left;font-weight:bold;}
+   #MainStatuSSpan{font-weight:bold;color:red;margin-left:15px;}
+   .banner_text_2 { width:745px!important; /*ff*/ *width:755px;/*ie6 7 8*/ }
+   #MaiNfooterspan{top:708px !important;/*ff*/ *top:688px;/*ie6 7 8*/}
+   table.transfer_table{font-size:12px;width:95%;}
+   table.transfer_table tr{line-height:20px;height:20px;}
+   table.transfer_table td{text-align:left;vertical-align:bottom;padding:5px 5px;} 
+   table.transfer_table td.title{text-align:left;padding-left:5px;font-weight:bold; }
+   table.transfer_table td a {font-family: Arial, Helvetica, sans-serif;font-size:12px;color:#FF9900;}
+   #SendDTMFdiv{margin-bottom:5px;}
+   .agent_info_table {font-size:12px;font-family:"宋体";padding:0px 0px;margin:0px 0px;}
+   .agent_info_table tr{height:18px;}
+   .agent_info_table td.head{text-align:left;width:30%;}
+   #XfeRGrouP{width:200px;vertical-align:text-bottom;}
+   .callbacklist th{font-size:12px;font-family:"宋体";font-weight:normal;}
+   .PauseCode-dialog .ui-dialog-titlebar-close{display: none;}
+   #ScriptContents{border:#eee 3px solid;}
+   .dispo_content_hover{
+	    background:#FDF39D; 
+		margin-top:8px; 		
+		border-top:1px #DFC904 solid;
+		border-right:none;
+		border-left:none;
+		border-bottom:1px #DFC904 solid;
+		color:#ff0000;
+		font-size:12px;
+		}
+   .dispo_content_normal{margin-top:10px;font-size:12px;}
+   .med_text_link{font-size:14px;color:#676767;}
+   .med_text_link:hover,.med_text_link:active{color:#ff0000;}
+   /*End*/
+-->
+</style>
+</head>
+<BODY onload="showBox();">
+<FORM name=vicidial_form>
+<input type=HIDDEN NAME=vtiger_activity_id ID=vtiger_activity_id value="">
+<span style="width:100%;position:absolute;left:0px;top:0px;z-index:2; " id="Header">
+
+<TABLE width="100%" BORDER=0 CELLPADDING=0 CELLSPACING=0 BGCOLOR=white height="30px" MARGINWIDTH=0 MARGINHEIGHT=0 LEFTMARGIN=0 TOPMARGIN=0 VALIGN=TOP ALIGN=LEFT>
+  <TR VALIGN=TOP ALIGN=LEFT>
+
+   <TD width="80px" COLSPAN=2 VALIGN=TOP ALIGN=LEFT  style="background:url(../agc/images/logo_r1_c3.jpg); background-repeat:repeat-x" >
+     <img src="../agc/images/logo_r1_c1.jpg" align="middle" />
+     <INPUT TYPE=HIDDEN NAME=extension>
+   </TD>
+
+  <TD style="background:url(../agc/images/logo_r1_c3.jpg); background-repeat:repeat-x;width:1%">&nbsp;</TD>
+
+  <TD class="banner_text_2" COLSPAN=4  VALIGN=TOP ALIGN=RIGHT style="background:url(../agc/images/logo_r1_c3.jpg); background-repeat:repeat-x;text-algin:left;">
+
+    <b><span style="color:#FFFFFF; font-size:12px; font-family:Arial, Helvetica, sans-serif;" id="status">LIVE</span></b>&nbsp;
+     <font class="banner_text">
+       <span id="SecondSspan">
+	    <font class="body_text">通话时长(秒): 
+        <span id="SecondSDISP"></span>
+      </span>
+      <!--客户时间: <input type=text size=20 name=custdatetime class="cust_form" value=""> &nbsp;
+      通道: <input type=text size=20 name=callchannel class="cust_form" value="">&nbsp; &nbsp;-->
+      <input type="hidden" name="custdatetime"  value="">
+      <input type="hidden" name="callchannel"  value="">
+
+            	  <a href="../admin.php" target="_blank">CCMS Admin</a>&nbsp;&nbsp;      <a href="#" onClick="NormalLogout();return false;">注销</a>
+<img src="../agc/images/logo_r1_c5.jpg" align="middle" />
+    </font>
+  </TD>
+
+ </TR>
+</TABLE>
+</SPAN>
+
+<span  style="position:absolute;left:172px;top:75px;z-index:30; text-align:left;" id="ScriptPanel">
+        <div id="ScriptContents">
+			<iframe onload=""  src=""" style="background-color:transparent;"  frameborder="0"  scrolling="yes" allowtransparency="true" id="popupFrame" name="popupFrame" width="99%" height="550"  STYLE="z-index:18"></iframe>
+		</div>        
+</span>
+
+<div id="CallBacKsLisTBoxDIV">
+<span id="CallBacKsLisTBox">
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+	<TR><TD align="center" valign="top">
+	<!--话务员的回拨电话 :<BR>点选以下回拨记录进行客户回拨，如果点选记录进行拨号，本次记录将会从名单内移除.-->
+
+	<!--<BR>-->
+	<div id="CallBacKsLisT"></div>
+	<!--<BR> &nbsp; 
+	<a href="#" onClick="CalLBacKsLisTCheck();return false;">刷新</a>-->
+	 &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+	<!--<a href="#" onClick="hideDiv('CallBacKsLisTBox');return false;">回上一页</a>-->
+	</TD></TR></TABLE>
+
+</span>
+</div>
+
+
+
+
+
+
+
+
+<!-- TransferMain@20110104 start -->
+<div id="TransferMainDIV">
+<span id="TransferMain">
+   <span id="xferchannel_span"></span>
+   <input type="hidden"  name="xferlength" id="xferlength" maxlength=4 size=24 >
+   <input type="hidden"  name="xferchannel" id="xferchannel" maxlength=200 size=35>
+   <input type="hidden" name="xferuniqueid" id="xferuniqueid" size=35>
+
+ <table cellpadding="0" cellspacing="0" border="0" class="transfer_table" align="center">
+  <!-- <tr>
+    <td>
+
+	</td>
+   </tr>-->
+   <!--秒 <input type="text" size="4" name="xferlength" id="xferlength" maxlength=4 >
+   通道 <input type="text" size="26" name="xferchannel" id="xferchannel" maxlength=200 >-->
+   <tr>
+    <td>
+       <span style="position:absolute;left:0px;top:0px;width:360px;height:300px;background-color:#FFFFFF" id="AgentXferViewSpan">
+			 <span style="margin-top:5px;margin-bottom:5px; padding-bottom:5px; text-align:center;width:100%;border-bottom:1px solid #eee;">
+				 用户组：
+				 <select name="AgentViewUsergroup2" id="AgentViewUsergroup2" style="width:120px;">
+
+				   <option value="Demo">[All]</option><option value="Demo">演示用户组</option>		     </select>
+			 技能组：
+			 <select name="AgentViewTechgroup2" id="AgentViewTechgroup2" style="width:120px;"><option value="IVR_Tracking,Sales,Support">[All]</option><option value="IVR_Tracking">IVR_Tracking</option><option value="Sales">订购组</option><option value="Support">客服组</option></select>
+			 </span>
+            <span id="AgentXferViewSelect"></span>       </span>	</td>
+
+   </tr>
+   <tr>
+   <td>
+   <fieldset>
+	<legend style="color:#000">转接目标</legend>
+	<div style="margin:2px 2px">
+	 <input type="radio" name="btnTransferTarget" id="consultativexfer" value="0" checked="checked" style="vertical-align:text-bottom" onClick="agentclick()"><span id="agentdirectlink" style="width:45px;"><b><a href="#" onClick="agent_check(this);XferAgentSelectLaunch();return false;" style="font-size:12px;" title="话务员">话务员</a></b>
+     </span>
+
+	 <span id="agentinput"><input type="text" size="12" name="xfernumber" id="xfernumber" maxlength="25" value="" style="margin-left:19px"></span>	
+	</div>
+
+    <div style="margin:2px 2px">
+	 <input type="radio" name="btnTransferTarget" id="xferoverride" size="1" value="0" style="vertical-align:text-bottom" onClick="overrideclick()">外线号码
+	 <span id="overrideinput"><input type="text" size="12"  maxlength="25" value="" style="margin-left:10px"></span>
+     
+	</div>
+    
+	<div id="preset_num">
+	</div>
+	<div style="margin:4px 2px">
+
+	 <input type="radio" name="btnTransferTarget" id="xferoverrideaaa" size="1" value="0" style="vertical-align:text-bottom" onClick="trasfertargetclick()">技能组
+	 <span id="XfeRGrouPLisT" style="margin-left:22px;">	    
+		<select size=1 name="XfeRGrouP" id="XfeRGrouP" onChange="XferAgentSelectLink();return false;" ><option>-- 选择转接技能组--</option></select>
+	 </span>
+      <span STYLE="background-color: #FFFFFF;display:none" id="LocalCloser">
+       		<IMG style="vertical-align:top;" SRC="../agc/images/vdc_XB_localcloser_OFF_cn.gif" border=0 alt="转本地技能组" >
+	        </span>
+	  <span STYLE="background-color: #FFFFFF;display:none" id="DialBlindVMail">
+	 	  <IMG SRC="../agc/images/vdc_XB_ammessage_OFF_cn.gif" border=0 alt="Blind Transfer VMail Message" style="vertical-align:middle">
+
+	  	</span>
+	</div>
+
+		<div style="margin:2px 2px">
+	 <input type="radio" name="btnTransferTarget" id="xferoverridebbb" size="1" value="0" style="vertical-align:text-bottom" onClick="vmclick()">语音信息	</div>
+	 </fieldset>   </td>
+  </tr>
+
+  
+
+  <tr>
+
+   <td>
+    <fieldset>
+	  <legend style="color:#000">转接方式</legend>
+     <span STYLE="background-color: #FFFFFF" id="DialBlindTransfer">	 </span>&nbsp; 
+
+     <span STYLE="background-color: #FFFFFF" id="DialWithCustomer">
+	     <a href="#" onClick="DialWithCustomerClick(1);return false;">
+		  		  <IMG SRC="../agc/images/vdc_XB_dialwithcustomer_cn.gif" border=0 alt="不挂断拨号" style="vertical-align:middle">
+		  		 </a>	</span>&nbsp;
+
+    <span STYLE="background-color: #FFFFFF" id="ParkCustomerDial">
+	  <a href="#" onClick="DialWithCustomerClick(0);return false;">
+	     <IMG SRC="../agc/images/vdc_XB_parkcustomerdial_cn.gif" border=0 alt="保持客户拨号" style="vertical-align:middle">	  </a>	</span>
+   </fieldset>   </td>
+  </tr>
+  
+  <tr>
+   <td>
+
+     <fieldset>
+	  <legend style="color:#000">挂断方式</legend>
+      <span STYLE="background-color: #FFFFFF" id="HangupXferLine">
+	   <!--when project is ehsn image changed-->
+      <IMG SRC="../agc/images/vdc_XB_hangupxferline_OFF_cn_ehsn.gif" border=0 alt="挂断第三方转接线" style="vertical-align:middle">	  </span>    
+     <span STYLE="background-color: #FFFFFF" id="HangupBothLines">
+	  
+	     <IMG SRC="../agc/images/vdc_XB_hangupbothlines_OFF_cn.gif" border=0 alt="全部挂断" style="vertical-align:middle">	 </span>
+    <span STYLE="background-color: #FFFFFF" id="Leave3WayCall">
+
+	  
+	    <IMG SRC="../agc/images/vdc_XB_leave3waycall_OFF_cn.gif" border=0 alt="离开三方通话" style="vertical-align:middle">	</span>
+  </fieldset>   </td>
+  </tr>
+ </table>
+    <span id="XfeRDiaLGrouPSelecteD"></span><span id="XfeRCID"></span>
+</span>
+</div>
+
+<!-- ShowFromCallInfo@20110425 end -->
+<div id="ShowFromCallInfoDIV">
+
+<span id="ShowFromCallInfoBox">
+	<span id="ShowFromCallInfo">aaaaaaaaaaa</span>
+</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN *********   Here is the main CCMS display panel -->
+<span style="position:absolute;left:0px;top:36px;z-index:10;width:100%;" id="MainPanel">
+<!--<TABLE border=0 BGCOLOR="" width= id="MainTable" >-->
+<TABLE border=0 BGCOLOR="#FFFFFF" width="100%" id="MainTable" >
+<TR>
+  <TD colspan="2">
+   <table border=0 width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+	 <td width="175px" align="center">
+
+	  <IMG SRC="../agc/images/agc_live_call_OFF_cn.gif" NAME=livecall  WIDTH=109 HEIGHT=30 BORDER=0>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <IMG SRC="../agc/images/pannel_control_img.jpg" style="margin-bottom:10px;" id="pannel_img" onClick="javascript:show_pannel_div();" ALT="隐藏面板" border="0">
+	 </td>
+	 <td align="left" valign="middle">
+	   <div class="queuediv">
+	     <span id="recording_debug"></span>
+	     <span id="AgentStatusCalls"></span>
+	     <span id="MainStatuSSpan"></span>
+
+	   </div>
+	 </td>
+	</tr>
+   </table>
+ <span id="busycallsdebug"></span>
+ </TD>
+</TR>
+<tr>
+<td id="button_pannel_td" nowrap="nowrap" style="width:175px;">
+<div id="button_pannel">
+<span id="HangupControl"><IMG SRC="../agc/images/vdc_LB_hangupcustomer_OFF_cn.gif" border=0 alt="挂断"></span>
+
+<span id="DiaLControl">
+<a href="#" onClick="ManualDialNext('','','','','','0');"><IMG SRC="../agc/images/vdc_LB_dialnextnumber_OFF_cn.gif" border=0 alt="拨下一个号码"></a>
+</span>
+<BR>
+<span id="ParkControl"><IMG SRC="../agc/images/vdc_LB_parkcall_OFF_cn.gif" border=0 alt="保持电话"></span>
+<span id="XferControl"><IMG SRC="../agc/images/vdc_LB_transferconf_OFF_cn.gif" border=0 alt="转接"></span><BR>
+<span style="" id="VolumeControlSpan"><span id="VolumeUpSpan"><IMG SRC="../agc/images/vdc_volume_up_off.gif" BORDER=0></span><BR><span id="VolumeDownSpan"><IMG SRC="../agc/images/vdc_volume_down_off.gif" BORDER=0></span>
+</span><BR>
+<span id="DiaLLeaDPrevieW">
+<input type=checkbox name=LeadPreview size=1 value="0">预览潜在客户
+</span>
+
+<!--
+ MODIFY BY FNATIC-->
+
+<!-- recording + fnatic -->
+
+<div style="display:none"> 
+  <span id="RecorDingFilename"></span>
+  <span id="RecorDID"></span>
+  <span STYLE="background-color: #FFFFFF" id="RecorDControl"><a href="#" onClick="conf_send_recording('MonitorConf',session_id,'');return false;"><IMG SRC="../agc/images/vdc_LB_startrecording_cn.gif" border=0 alt="启动录音"></a></span>
+  <!--// fix vicidial record bug + fantic-->
+  <input type="hidden" id="RecorDingFilename_input" value="" />
+  <!--// end -->
+</div>
+<!-- end -->
+
+<span id="ReQueueCall"></span>
+
+
+
+<!--<span id="SpacerSpanC"><IMG SRC="../agc/images/blank.gif" width=145 height=16 border=0></span><BR>
+<span id="SpacerSpanD"><IMG SRC="../agc/images/blank.gif" width=145 height=16 border=0></span><BR>-->
+<!--Mod by fnatic -->
+<div class="button_link">
+<table width="100%">
+<tr >
+	<td>
+	 <span id="AgentViewLinkSpan">
+	  <span id="AgentViewLink">
+
+	  
+	   <a href="#" onClick="AgentsViewOpen('AgentViewSpan','open');return false;">查看话务员状态</a>
+	  </span>
+	 </span>
+	</td>
+</tr>
+<tr>
+	<td>
+	<span id="AgentAlertSpan">
+	<a href="#" onClick="alert_control('OFF');return false;">关闭进线提示</a>	</span>
+
+	</td>
+</tr>
+<tr>
+	<td>
+	<span  id="callsinqueuelink">
+	<a href="#" onClick="show_calls_in_queue('SHOW');">提取队列通话</a>
+	</span>   
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+
+	<span id="busycallsdisplay">
+	<a href="#"  onclick="conf_channels_detail('SHOW');">显示通道信息</a>
+	</span>   
+	</td>
+</tr>
+<tr>
+	<td>
+	<span id="CallbacksButtons"></span><span id="CBstatusSpan"><a href="#" onClick="CalLBacKsLisTCheck();return false;">个人回拨提示</a></span>
+	</td>
+
+</tr>
+</table>
+
+<!--Add fnatic start-->
+<bgsound id="snd" loop="1" src="">
+<!--Add fnatic end-->
+
+</div>
+
+<div id="accordionResizer" style="padding-left:3px;padding-right:5px; width:100%; height:320px;">
+<div id="accordion">
+	<h3><a href="#">Section 1</a></h3>
+	<div>
+		<p>
+		Mauris mauris ante
+		</p>
+	</div>
+	<h3><a href="#">Section 2</a></h3>
+	<div>
+		<p>
+		Sed non urna. 
+		</p>
+	</div>
+	<h3><a href="#">Section 3</a></h3>
+	<div>
+
+		<ul>
+			<li>List item one</li>
+			<li>List item two</li>
+			<li>List item three</li>
+		</ul>
+	</div>
+	<h3><a href="#">Section 4</a></h3>
+	<div>
+		<p>
+		Cras dictum. 
+		</p>
+
+	</div>
+</div>
+
+</div><!-- End demo -->
+<div class="volume_button" style="display:none">
+
+<div id="SendDTMFdiv">
+   <span id="SendDTMF">
+	 <IMG style="cursor:pointer;" onClick="SendConfDTMF(session_id);return false;" SRC="../agc/images/vdc_LB_senddtmf_cn.gif" border="0" alt="DTMF" align="absmiddle">
+   <input type="text" size="8" name="conf_dtmf" value="" maxlength="50">
+
+  </span>
+</div>
+ 
+
+<span id="AgentMuteSpan"></span>&nbsp;
+<span id="VolumeControlSpan"><span id="VolumeUpSpan"><IMG SRC="../agc/images/vdc_volume_up_off.gif" BORDER=0></span>&nbsp;<span id="VolumeDownSpan"><IMG SRC="../agc/images/vdc_volume_down_off.gif" BORDER=0></span>
+</font></span>
+</div>
+<hr>
+ <!-- version:  
+  版次:  
+  主机:   -->
+
+   <!-- <br/>
+  <b>暂停原因</b>
+  
+  <br/>
+  <b>会议 ID:</b>
+  <span id="sessionIDspan"></span>
+  <span id="status" style="font-family:sans-serif; font-size:12px; color:#FFFFFF">LIVE</span>
+  <span id="agentchannelSPAN"></span>-->
+
+
+</div>
+
+<!--end-->
+</td>
+<td width= align=left valign=top>
+
+
+</font>
+</td>
+<td width=1 align=center>
+</td>
+</tr>
+</td></tr>
+
+<!-- END *********   Here is the main CCMS display panel -->
+</TD></TR></TABLE>
+</FORM>
+
+
+
+</body>
+
+</html>
+
