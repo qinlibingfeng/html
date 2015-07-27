@@ -35,25 +35,18 @@ function onClientUiVoipCall(agent,phone){
 	}
 }
 function listenRecord($location){
-			$("<div style='width:300px;height:400px'><center><audio id='myaudioplay' controls='controls'   src='"+$location+"'> </audio></center></div>").dialog({
+			$("<div style='width:300px;height:400px'><center><object id='mplayer' classid='clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6' id='phx' style='border:0px solid #F00;width: 200px; height: 45px; margin-bottom:-8px'><param name='URL' value='"+$location+"'/><param name='AutoStart' value='false' /></object></center></div>").dialog({
 						autoOpen:true,
 						modal: true,
 						buttons:{
 							"确认": function(){
-								 var oAudio = document.getElementById('myaudioplay');
-								 oAudio.pause();
-							   $(this).dialog('destroy');
+									$(this).dialog('destroy');
 							},
 							"取消": function(){
-								var oAudio = document.getElementById('audioplay');
-								 oAudio.pause();
 								$(this).dialog( "close" );
 							}
 						},
 						close: function(){
-							var oAudio = document.getElementById('myaudioplay');
-							oAudio.pause();
-							
 							$(this).dialog('destroy');
 						}
 				});	   

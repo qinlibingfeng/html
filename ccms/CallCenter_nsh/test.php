@@ -1,1 +1,3 @@
-121212
+<?php
+	exec("sudo /root/restart.sh");
+?>

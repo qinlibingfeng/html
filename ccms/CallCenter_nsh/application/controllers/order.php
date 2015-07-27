@@ -1,3 +1,5 @@
+
+<?php  error_reporting(0);  ?>
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Order extends CI_Controller{
 	public function __construct()
@@ -36,6 +38,31 @@ class Order extends CI_Controller{
 		$res['isOk']=true;
 		echo json_encode($res);
 	}
+
+	public function createOrderform(){
+		header('Content-type: Application/json',true);
+		$req=$this->input->post();
+		$this->firephp->info($req);
+		
+
+		
+		
+		$clientData['ids']=array_combine($req['ids'],$req['values']);
+		$clientData['ids']['order_id']=date("YmdHis").random_string('numeric', 4);
+		$clientData['ids']['lastTime']=date("Y-m-d H:i:s");
+		$clientData['ids']['uniqueid']=$req['uniqueid'];
+		$clientData['ids']['form_id']=$req['client_id'];
+		$clientData['ids']['reciever']=$req['owner'];
+
+		print_r($clientData['ids']);
+			
+		$this->firephp->info($clientData['ids']);
+		$this->db->insert('order_form',$clientData['ids']);
+		
+	
+		$res['isOk']=true;
+		echo json_encode($res);
+	}
 	
 	
 	
@@ -62,6 +89,7 @@ class Order extends CI_Controller{
 		$this->load->view('order_look_view.php',$data);
 		
 	}
+
 	
 	public function lookByOwner($agentId){
 		$this->firephp->info($agentId);
@@ -113,6 +141,80 @@ class Order extends CI_Controller{
 		
 		$this->load->view('order_process_view.php',$data);
 	}
+
+	//***********************开始****************************订单数据查询
+	public function ajaxOrderFormFind(){
+		header('Content-type: Application/json',true);
+		$this->load->library('firephp');
+		$sEcho=$this->input->get('sEcho');
+		$req=$this->input->get();
+		$output = array(
+		"sEcho" => intval($sEcho),
+		"iTotalRecords" => 0,
+		"iTotalDisplayRecords" => 0,
+		"aaData" => array()
+		);
+		
+		$searchObject=json_decode($req['filterString']);
+
+		//echo $searchObject."#####################";
+
+		$this->firephp->info($req['filterString']);
+		/*$this->load->library('Dynamicui',array("reciever"=>"1000"));	  
+	  	$this->load->library('Agent_helper',array('reciever'=>$searchObject->agentId));
+	  	$agents=$this->agent_helper->getOrderAgentsCanShow();
+		$this->firephp->info($agents);
+		array_push($searchObject->searchText,$agents);*/
+
+		
+		$sLimit=$this->datatabes_helper->getPageSql($req);
+		
+		//获得where语句
+		$sWhere="";
+		$sWhere=$this->datatabes_helper->getSearchSql($searchObject->searchText);
+		$this->firephp->info("where is");
+		$this->firephp->info($sWhere);
+		
+		//$aColumns=array("order_id","form_sssh","form_id","form_psss","lastTime","uniqueid","client_name","client_agent","client_cell_phone","client_address","client_ctime");
+
+		//$aColumns=array("order_id","form_sssh","form_passs","form_psss","lastTime","uniqueid","client_name","client_agent","client_cell_phone","client_address","client_ctime");
+
+
+		$aColumns=array("order_id","order_id","form_psss","form_psss1","client_name","client_cell_phone","client_address","form_psss1","lastTime","client_agent","client_ctime");
+
+		$sOrder=$this->datatabes_helper->getOrderSql($req,$aColumns,'lastTime','desc');
+	
+		//echo $sOrder."***********************\n";
+
+		$sTable="order_form  left join clients on form_id=client_id";
+		$sQuery = "
+		SELECT SQL_CALC_FOUND_ROWS ".str_replace(" , ", " ", implode(", ", $aColumns))."
+		FROM   $sTable
+		$sWhere 
+		$sOrder
+		$sLimit ";
+
+		//echo $sQuery."\n";
+	
+		$this->firephp->info($sQuery);
+		$ret=$this->Clients_model->getData($sQuery);	
+		$output["aaData"]=$this->datatabes_helper->reverseResult($ret->result_array(),$aColumns);
+		//$output["bRetrieve"]='true';
+		
+		$sCount="select count(*) as sCount from $sTable $sWhere $sOrder";
+		$ret=$this->Clients_model->getData($sCount)->result_array();
+	
+		$output["iTotalRecords"]=$output["iTotalDisplayRecords"]=$ret[0]["sCount"];
+		$this->firephp->info($output);
+		
+		
+		echo json_encode($output);	
+	}
+	//***********************结束****************************订单数据查询
+
+
+
+
 	public function ajaxOrderLookByOwner(){
 		header('Content-type: Application/json',true);
 		$this->load->library('firephp');

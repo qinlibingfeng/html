@@ -420,14 +420,14 @@ var $tabs = $("#tabs").tabs({
     
     <?php foreach ($items as $item){?> 
 		<div class=gFd>
-    	  <h3 class="gfTit" onmouseover="javascript:showDivMenu('study_<?php echo $item["item_id"]?>'); showFoldClass('fold_<?php echo $item["item_id"]?>');" onmouseout="javascript:hideDivMenu('study_<?php echo $item["item_id"]?>')">
-        	  <!-- <a href="javascript:void(0);" id="fold_<?php echo $item["item_id"]?>" rel="fold" class="opnFd bgF1" title="开启" hidefocus="true"></a>-->
+    	  <h3 class="gfTit" onmouseover="javascript:showDivMenu('study_<?php echo $item["item_id"]?>'); showFoldClass('fold_<?php echo $item["item_id"]?>');"  onmouseout="javascript:hideDivMenu('study_<?php echo $item["item_id"]?>')">
+        	   <!--<a href="javascript:void(0);" id="fold_<?php echo $item["item_id"]?>" rel="fold" class="opnFd bgF1" title="开启" hidefocus="true"></a>-->
              <img  src=" " width=128px height=33px><a href="javascript:void(0);" style="display:hidden" class="gfName" hidefocus="true"><?php echo $item["item_text"];?></a></img>
           </h3> 
-  		  <ul class="gFdBdy" id="study_<?php echo $item["item_id"]?>"  style="display:none"; onmouseout="javascript:hidegFdBdy();">
+  		   <ul class="gFdBdy" id="study_<?php echo $item["item_id"]?>"  style="display:none"; onmouseout="javascript:hidegFdBdy();">
                <?php foreach($item["sub_items"] as $sub_item){?>
             <li onMouseOver="javascript:showDivMenu('study_<?php echo $item["item_id"]?>');addClassName('li_<?php echo $sub_item["item_id"] ?>','on');" id="li_<?php echo $sub_item["item_id"] ?>" onMouseOut="javascript:removeClassName('li_<?php echo $sub_item["item_id"] ?>','on');" title="" rel="o_list">
-               <b class="icon <?php echo $sub_item["item_logo"];?>"></b><a href="javascript:nav('<?php echo $sub_item["item_text"]?>','<?php echo $sub_item["item_url"]?>')" hidefocus="true" class="gfNm"><?php echo $sub_item["item_text"];?></a>
+            <b class="icon <?php echo $sub_item["item_logo"];?>"></b><a href="javascript:nav('<?php echo $sub_item["item_text"]?>','<?php echo $sub_item["item_url"]?>')" hidefocus="true" class="gfNm"><?php echo $sub_item["item_text"];?></a>
             </li>
              <?php } ?>
           </ul>  

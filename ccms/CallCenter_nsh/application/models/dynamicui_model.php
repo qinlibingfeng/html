@@ -17,46 +17,11 @@ class Dynamicui_model extends CI_Model{
 				array_push($ret,(string)$item->dbfield);
 		}	
 		
-		foreach($xml->loanInvestigateTable->children() as $children){
+		/*foreach($xml->bussniessInfoTable->children() as $children){
 			$row=array();
 			foreach($children->children() as $item)
 				array_push($ret,(string)$item->dbfield);
-		}	
-		foreach($xml->loanRecheckTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item)
-				array_push($ret,(string)$item->dbfield);
-		}			
-		
-		foreach($xml->loanCheckTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item)
-				array_push($ret,(string)$item->dbfield);
-		}				
-		foreach($xml->limitMakingTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item)
-				array_push($ret,(string)$item->dbfield);
-		}			
-		foreach($xml->loanGiveoutTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item)
-				array_push($ret,(string)$item->dbfield);
-		}				
-		
-		foreach($xml->loanRevisitTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item)
-				array_push($ret,(string)$item->dbfield);
-		}				
-				
-		
-		
-		
-		
-		
-		
-		
+		}*/
 		
 		if(!in_array("client_agnet",$ret))
 			array_push($ret,"client_agent");
@@ -95,12 +60,23 @@ class Dynamicui_model extends CI_Model{
 	return $ret;	
 	}
 
+	function getGerenidbusnissdata(){
+		$ret=array();	
+		$xml = $this->xml;
+		foreach($xml->bussniessInfoTable->children() as $children){
+			$row=array();
+			foreach($children->children() as $item)
+				array_push($ret,(string)$item->id);
+		}	
+		return $ret;	
+	}
+
 
 	function getOrderBaseInfoFileds(){
 		$ret=array();	
 		$xml = $this->xml;
 		
-		foreach($xml->loanInvestigateTable->children() as $children){
+		foreach($xml->bussniessInfoTable->children() as $children){
 			$row=array();
 			foreach($children->children() as $item)
 				array_push($ret,(string)$item->dbfield);
@@ -156,28 +132,17 @@ class Dynamicui_model extends CI_Model{
 					array_push($ret["bindField"],"bill_note");
 				}else{
 					array_push($ret["dbField"],(string)$item->dbfield);
-				}
-				$str = $item->name;
-				$newstr = substr($str,0,-1); 
-					
-				array_push($ret["tabHeader"],(string)$newstr);
-				//array_push($ret["tabHeader"],(string)$item->name);		
+				}			
+				array_push($ret["tabHeader"],(string)$item->name);		
 			}
 		}	
 		
-		foreach($xml->loanInvestigateTable->children() as $children){
+		foreach($xml->bussniessInfoTable->children() as $children){
 				$row=array();
 				foreach($children->children() as $item){
 					
 					array_push($ret["dbField"],(string)$item->dbfield);
-					
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-					//echo $newstr."11111111111";
-
-					//array_push($ret["tabHeader"],(string)$item->name);
+					array_push($ret["tabHeader"],(string)$item->name);
 					if((string)$item->dbfield == "client_note"){
 						array_push($ret["dbField"],"bill_note");
 						array_push($ret["bindField"],"bill_note");
@@ -187,134 +152,44 @@ class Dynamicui_model extends CI_Model{
 				
 			}
 		}	
-		
-		
-		foreach($xml->loanRecheckTable->children() as $children){
-				$row=array();
-				foreach($children->children() as $item){
-					
-					array_push($ret["dbField"],(string)$item->dbfield);
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-
-					//array_push($ret["tabHeader"],(string)$item->name);
-					if((string)$item->dbfield == "client_note"){
-						array_push($ret["dbField"],"bill_note");
-						array_push($ret["bindField"],"bill_note");
-						array_push($ret["tabHeader"],'沟通记录');
-					}
-					
-				
-			}
-		}	
-		
-	foreach($xml->loanCheckTable->children() as $children){
-				$row=array();
-				foreach($children->children() as $item){
-					
-					array_push($ret["dbField"],(string)$item->dbfield);
-
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-					//array_push($ret["tabHeader"],(string)$item->name);
-					if((string)$item->dbfield == "client_note"){
-						array_push($ret["dbField"],"bill_note");
-						array_push($ret["bindField"],"bill_note");
-						array_push($ret["tabHeader"],'沟通记录');
-					}
-					
-				
-			}
-		}			
-		foreach($xml->limitMakingTable->children() as $children){
-				$row=array();
-				foreach($children->children() as $item){
-					
-					array_push($ret["dbField"],(string)$item->dbfield);
-
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-					//array_push($ret["tabHeader"],(string)$item->name);
-					if((string)$item->dbfield == "client_note"){
-						array_push($ret["dbField"],"bill_note");
-						array_push($ret["bindField"],"bill_note");
-						array_push($ret["tabHeader"],'沟通记录');
-					}
-					
-				
-			}
-		}			
-		foreach($xml->loanGiveoutTable->children() as $children){
-				$row=array();
-				foreach($children->children() as $item){
-					
-					array_push($ret["dbField"],(string)$item->dbfield);
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-					//array_push($ret["tabHeader"],(string)$item->name);
-					if((string)$item->dbfield == "client_note"){
-						array_push($ret["dbField"],"bill_note");
-						array_push($ret["bindField"],"bill_note");
-						array_push($ret["tabHeader"],'沟通记录');
-					}
-					
-				
-			}
-		}	
-		foreach($xml->loanRevisitTable->children() as $children){
-				$row=array();
-				foreach($children->children() as $item){
-					
-					array_push($ret["dbField"],(string)$item->dbfield);
-
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-					//array_push($ret["tabHeader"],(string)$item->name);
-					if((string)$item->dbfield == "client_note"){
-						array_push($ret["dbField"],"bill_note");
-						array_push($ret["bindField"],"bill_note");
-						array_push($ret["tabHeader"],'沟通记录');
-					}
-					
-				
-			}
-		}			
-		foreach($xml->otherTable->children() as $children){
-				$row=array();
-				foreach($children->children() as $item){
-					
-					array_push($ret["dbField"],(string)$item->dbfield);
-
-					$str = $item->name;
-					$newstr = substr($str,0,-1); 
-					
-					array_push($ret["tabHeader"],(string)$newstr);
-					//array_push($ret["tabHeader"],(string)$item->name);
-					if((string)$item->dbfield == "client_note"){
-						array_push($ret["dbField"],"bill_note");
-						array_push($ret["bindField"],"bill_note");
-						array_push($ret["tabHeader"],'沟通记录');
-					}
-					
-				
-			}
-		}			
 		array_push($ret["tabHeader"],"创建时间");	
 		array_push($ret["dbField"],"client_ctime");	
 		array_push($ret["tabHeader"],"沟通时间");	
 		array_push($ret["dbField"],"client_modify_time");	
 		return $ret;
 	}
+
+
+	//*******************************************************************************
+	function getClientformExportFields(){
+		$ret=array("dbField"=>array(),"tabHeader"=>array(),"bindField"=>array());		
+		array_push($ret["dbField"],"order_id");
+		array_push($ret["tabHeader"],"订单号");
+		$xml = $this->xml;
+	
+		foreach($xml->bussniessInfoTable->children() as $children){
+				$row=array();
+				foreach($children->children() as $item){
+					
+					array_push($ret["dbField"],(string)$item->dbfield);
+					array_push($ret["tabHeader"],(string)$item->name);
+					/*if((string)$item->dbfield == "client_note"){
+						array_push($ret["dbField"],"bill_note");
+						array_push($ret["bindField"],"bill_note");
+						array_push($ret["tabHeader"],'沟通记录');
+					}*/
+					
+				
+			}
+		}	
+		array_push($ret["tabHeader"],"订单时间");	
+		array_push($ret["dbField"],"lastTime");	
+		array_push($ret["tabHeader"],"所属坐席");	
+		array_push($ret["dbField"],"reciever");	
+		return $ret;
+	}
+
+	//*********************************************************************************
 	
 	function getCustomSearchPanel(){
 		$xml = $this->xml;
@@ -402,7 +277,7 @@ class Dynamicui_model extends CI_Model{
 				array_push($ret,(string)$children->dbfield);
 		}
 		
-		foreach($xml->loanInvestigateTable->children() as $children){
+		foreach($xml->bussniessInfoTable->children() as $children){
 			$row=array();
 			foreach($children->children() as $item)
 				array_push($ret,(string)$item->dbfield);
@@ -446,11 +321,11 @@ class Dynamicui_model extends CI_Model{
 		return $ret;
 	}
 	
-	function getLoanInvestigateTableData($defaultValues){
+	function getBussniessInfoTableData($defaultValues){
 		$xml = $this->xml;	
 		$items=$xml->baseInfoTable->row;
 		$ret["elements"]=array();	
-		foreach($xml->loanInvestigateTable->children() as $children){
+		foreach($xml->bussniessInfoTable->children() as $children){
 			$row=array();
 			foreach($children->children() as $item){
 				$itemArray=array("colspan"=>(int)$item->colspan,"name"=>(string)$item->name,"lspace"=>(int)$item->lspace,"type"=>(int)$item->type,"width"=>(string)$item->width,"height"=>(string)$item->height,"id"=>(string)$item->id,"value"=>array("defaultValue"=>'',"values"=>array()));	
@@ -479,93 +354,7 @@ class Dynamicui_model extends CI_Model{
 		}		
 		return $ret;	
 	}
-	function getLoanRecheckTableData($defaultValues){
-		$xml = $this->xml;	
-		$items=$xml->baseInfoTable->row;
-		$ret["elements"]=array();	
-		foreach($xml->loanRecheckTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item){
-				$itemArray=array("colspan"=>(int)$item->colspan,"name"=>(string)$item->name,"lspace"=>(int)$item->lspace,"type"=>(int)$item->type,"width"=>(string)$item->width,"height"=>(string)$item->height,"id"=>(string)$item->id,"value"=>array("defaultValue"=>'',"values"=>array()));	
-				$itemArray["value"]["defaultValue"]=isset($defaultValues[(string)$item->dbfield])?$defaultValues[(string)$item->dbfield]:'';
-				$itemArray["value"]["values"]=$this->getValues((int)$item->type,(string)$item->valuesource,(string)$item["value"]["defaultValue"]);
-				array_push($row,$itemArray);
-			}
-			array_push($ret["elements"],$row);		
-		}	
-		
-		return $ret;	
-	}	
-	function getLoanCheckTableData($defaultValues){
-		$xml = $this->xml;	
-		$items=$xml->baseInfoTable->row;
-		$ret["elements"]=array();	
-		foreach($xml->loanCheckTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item){
-				$itemArray=array("colspan"=>(int)$item->colspan,"name"=>(string)$item->name,"lspace"=>(int)$item->lspace,"type"=>(int)$item->type,"width"=>(string)$item->width,"height"=>(string)$item->height,"id"=>(string)$item->id,"value"=>array("defaultValue"=>'',"values"=>array()));	
-				$itemArray["value"]["defaultValue"]=isset($defaultValues[(string)$item->dbfield])?$defaultValues[(string)$item->dbfield]:'';
-				$itemArray["value"]["values"]=$this->getValues((int)$item->type,(string)$item->valuesource,(string)$item["value"]["defaultValue"]);
-				array_push($row,$itemArray);
-			}
-			array_push($ret["elements"],$row);		
-		}	
-		
-		return $ret;	
-	}		
-
-	function getLimitMakingTableData($defaultValues){
-		$xml = $this->xml;	
-		$items=$xml->baseInfoTable->row;
-		$ret["elements"]=array();	
-		foreach($xml->limitMakingTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item){
-				$itemArray=array("colspan"=>(int)$item->colspan,"name"=>(string)$item->name,"lspace"=>(int)$item->lspace,"type"=>(int)$item->type,"width"=>(string)$item->width,"height"=>(string)$item->height,"id"=>(string)$item->id,"value"=>array("defaultValue"=>'',"values"=>array()));	
-				$itemArray["value"]["defaultValue"]=isset($defaultValues[(string)$item->dbfield])?$defaultValues[(string)$item->dbfield]:'';
-				$itemArray["value"]["values"]=$this->getValues((int)$item->type,(string)$item->valuesource,(string)$item["value"]["defaultValue"]);
-				array_push($row,$itemArray);
-			}
-			array_push($ret["elements"],$row);		
-		}	
-		
-		return $ret;	
-	}	
-	function getLoanGiveoutTableData($defaultValues){
-		$xml = $this->xml;	
-		$items=$xml->baseInfoTable->row;
-		$ret["elements"]=array();	
-		foreach($xml->loanGiveoutTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item){
-				$itemArray=array("colspan"=>(int)$item->colspan,"name"=>(string)$item->name,"lspace"=>(int)$item->lspace,"type"=>(int)$item->type,"width"=>(string)$item->width,"height"=>(string)$item->height,"id"=>(string)$item->id,"value"=>array("defaultValue"=>'',"values"=>array()));	
-				$itemArray["value"]["defaultValue"]=isset($defaultValues[(string)$item->dbfield])?$defaultValues[(string)$item->dbfield]:'';
-				$itemArray["value"]["values"]=$this->getValues((int)$item->type,(string)$item->valuesource,(string)$item["value"]["defaultValue"]);
-				array_push($row,$itemArray);
-			}
-			array_push($ret["elements"],$row);		
-		}	
-		
-		return $ret;	
-	}	
-	function getLoanRevisitTableData($defaultValues){
-		$xml = $this->xml;	
-		$items=$xml->baseInfoTable->row;
-		$ret["elements"]=array();	
-		foreach($xml->loanRevisitTable->children() as $children){
-			$row=array();
-			foreach($children->children() as $item){
-				$itemArray=array("colspan"=>(int)$item->colspan,"name"=>(string)$item->name,"lspace"=>(int)$item->lspace,"type"=>(int)$item->type,"width"=>(string)$item->width,"height"=>(string)$item->height,"id"=>(string)$item->id,"value"=>array("defaultValue"=>'',"values"=>array()));	
-				$itemArray["value"]["defaultValue"]=isset($defaultValues[(string)$item->dbfield])?$defaultValues[(string)$item->dbfield]:'';
-				$itemArray["value"]["values"]=$this->getValues((int)$item->type,(string)$item->valuesource,(string)$item["value"]["defaultValue"]);
-				array_push($row,$itemArray);
-			}
-			array_push($ret["elements"],$row);		
-		}	
-		
-		return $ret;	
-	}			
-		
+	
 	function getImportTableMap(){
 		$xml = $this->xml;
 		$ret=array();

@@ -33,7 +33,8 @@ class login extends CI_Controller{
 	public  function  vici_login($usr,$passwd){
 		
 
-	if ($this->Users_model->check_agents($usr,$passwd)){
+		if ($this->Users_model->check_agents($usr,$passwd)){
+			//echo "1111111111";
 			$session['is_login']=true;
 			$session['login_id']=$usr;
 	
@@ -62,7 +63,7 @@ class login extends CI_Controller{
 			
 			return;			
 		}		
-
+		//echo "222222222222";
 		redirect('login');			
 	}
 
